@@ -1,0 +1,231 @@
+/* 메인 */
+main{
+    text-align: center;
+    position: relative;
+}
+.mainTop{
+    position: relative;
+}
+.mainTop>.image{
+    width: 100%;
+    height: min(12rem,480px);
+    background-image: url('../image/recyclingrobotsystem_main.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mainTop>.texts{
+    position: absolute;
+    top: min(5rem,200px);
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.mainTop h2{
+    font-size: min(4.8em,48px);
+    line-height: min(2rem,80px);
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+.mainBtm{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: rgba(51,51,51,.8);
+}
+.mainBtm>ul{
+    width: 80%;
+    max-width: 1420px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.mainBtm>ul>li:nth-child(1):after{
+    display: block;
+    content: '';
+    width: 1px;
+    height: min(1rem,40px);
+    background: rgba(255,255,255,.2);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.mainBtm>ul>li::before{
+    display: block;
+    content: '';
+    width: 1px;
+    height: min(1rem,40px);
+    background: rgba(255,255,255,.2);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+.mainBtm>ul>li{
+    width: calc(100% / 3);
+    font-size: min(1.6em,16px);
+    line-height: min(2rem,80px);
+    text-transform: uppercase;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+}
+.mainBtm>ul>li>a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.mainBtm>ul>li:nth-child(3){
+    color: #4cb300;
+    font-weight: 600;
+    background-color: #fff;
+}
+/* 컨텐츠*/
+.cntWrap{
+    margin-top: min(2rem,80px);
+}
+.content{
+    width: 80%;
+    max-width: 1420px;
+    margin: 0 auto;
+}
+.content>header{
+    font-size: min(2.4em,24px);
+    line-height: min(1rem,40px);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.content>header>ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: calc(100% / 16 * 12);
+    margin: 0 auto;
+}
+.content>header li{
+    width: calc(100% / 3);
+    text-align: center;
+    position: relative;
+}
+.content>header li{
+    font-weight: 700;
+}
+.content>header li:after{
+    display: block;
+    content: '';
+    width: calc(100% / 4);
+    height: 3px;
+    background-color: #4cb300;
+    margin: 0 auto;
+}
+.content>section{
+    margin-top: min(2rem,80px);
+}
+section h3{
+    line-height: min(1rem,40);
+}
+section p{
+    font-size: min(1.8em,18px);
+    line-height: min(1rem,40px);
+}
+.artMid article{
+    direction: rtl;
+}
+.artMid article>.texts{
+    direction: ltr;
+}
+.artTop .texts{
+    text-align: center;
+}
+.artTop .texts>h3{
+    font-size: min(3.2em,32px);
+    font-weight: 700;
+}
+.artTop .texts>p{
+    margin-top: min(0.5rem,20px);
+}
+.artTop .image{
+    margin-top: min(2rem,80px);
+    width: 100vw;
+    margin-left: min(calc((100vw - 1420px) / -2),calc((100vw - 80vw) / -2));
+    height: min(16rem,640px);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-image: url('../image/material_img1.jpg');
+}
+.artMid{
+    margin-top: min(4rem,160px);
+}
+.artMid>article{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.artMid .image{
+    width: calc(100% / 16 * 7.5);
+    height: min(9rem,360px);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../image/material_img2.jpg');
+}
+.artMid .texts{
+    width: calc(100% / 16 * 8);
+}
+.artMid .texts>h3{
+    font-size: min(3.2em,32px);
+    font-weight: 700;
+    text-align: left;
+}
+.artMid .texts>p{
+    margin-top: min(1rem,40px);
+}
+.artBtm{
+    margin-top: min(4rem,160px);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.artBtm>article{
+    display: flex;
+    justify-content: left;
+    width: 50%;
+}
+.artBtm>article:nth-child(2)~article{
+    margin-top: min(0.75rem,30px);
+}
+.artBtm .image{
+    width: calc(100% / 8 * 0.5);
+    height: min(1.5rem,80px);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.artBtm .image.i1{
+    background-image: url('../image/material_img3.jpg');
+}
+.artBtm .image.i2{
+    background-image: url('../image/material_img4.jpg');
+}
+.artBtm .image.i3{
+    background-image: url('../image/material_img5.jpg');
+}
+.artBtm .image.i4{
+    background-image: url('../image/material_img6.jpg');
+}
+.artBtm .texts{
+    margin-left: 20px;
+    width: calc(100% / 8 * 7);
+}
+.artBtm .texts>h3{
+    font-size: min(2.2em,22px);
+    line-height: min(1rem,40px);
+}

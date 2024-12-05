@@ -1,0 +1,136 @@
+/* 헤더 */
+.hdrWrap>header{
+    line-height: 80px;
+}
+header>.logo{
+    width: calc(100% / 4 * 1.8);
+    height: 80px;
+}
+.hdrWrap h4{
+    font-size: 32px;
+    width: calc(100% / 4);
+}
+/* 메뉴 */
+.mobileWrap>.menu{
+    width: 100vw;
+}
+.mobileWrap .mnTop{
+    line-height: 80px;
+    padding: 0 15px;
+}
+.mobileWrap .mnTop>.logo{
+    height: 80px;
+    width: 150px;
+}
+.mobileWrap .mnTop>h4{
+    font-size: 32px;
+}
+.mobileWrap .mnBtm>ul>li:nth-child(odd){
+    line-height: 50px;
+    font-size: 16px;
+}
+.mobileWrap .mnBtm>ul>li:nth-child(even){
+    line-height: 30px;
+    font-size: 14px;
+}
+.mobileWrap .mnBtm>ul>li:nth-child(even).show{
+    height: 180px;
+}
+/* 메인 */
+.mainTop>.image{
+    height: 280px;
+}
+.mainTop>.texts{
+    top: 120px;
+}
+.mainTop h2{
+    font-size: 24px;
+    line-height: 80px;
+}
+.mainBtm>ul>li:nth-child(1):after{
+    height: 25px;
+}
+.mainBtm>ul>li::before{
+    height: 25px;
+}
+.mainBtm>ul>li{
+    line-height: 40px;
+    font-size: 12px;
+}
+/* 컨텐츠 */
+.cntWrap{
+    margin-top: 40px;
+}
+.content>header{
+    font-size: 16px;
+    line-height: 40px;
+}
+.content>header::after{
+    width: calc(100% / 4 * 0.7);
+    height: 2px;
+}
+.content>section{
+    margin-top: 40px;
+}
+.artBtm{
+    display: block;
+}
+.artBtm>article:nth-child(1){
+    width: 100%;
+}
+.artBtm>article{
+    width: 100%;
+    padding: 10px 5px;
+    border-bottom: 1px dotted #666;
+}
+.artBtm>article::after{
+    border-right: none;
+}
+.artBtm>article:nth-last-child(1){
+    border-bottom: none;
+}
+.artBtm>article:nth-child(1)>.texts{
+    width: calc(100% - 50px);
+}
+.artBtm .texts{
+    line-height: 25px;
+    font-size: 12px;
+    width: calc(100% - 50px);
+}
+/* 풋터 */
+.ftrWrap{
+    margin-top: 40px;
+}
+.footer{
+    padding: 40px 0px;
+    font-size: 12px;
+    line-height: 20px;
+}
+.footer .logo{
+    width: calc(100% / 4 * 1.8);
+    height: 80px;
+}
+.footer ul{
+    width: 100%;
+    min-width: auto;
+}
+.footer ul>li{
+    margin-left: 0px;
+}
+.footer span{
+    display: none;
+}
+.footer ul>li:nth-child(6){
+    margin-left: 15px;
+}
+.footer>h4{
+    line-height: 40px;
+}
+.top{
+    bottom: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    font-size: 14px;
+    line-height: 25px;
+}

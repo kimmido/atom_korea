@@ -1,0 +1,182 @@
+/* 메인 */
+.mainTop>.image{
+    height: min(11.5rem,460px);
+}
+.mainTop>.texts{
+    top: min(5rem,200px);
+}
+.mainTop h2{
+    font-size: min(3.6em,36px);
+    line-height: min(1rem,40px);
+}
+.mainBtm>ul{
+    width: 90%;
+    max-width: 700px;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+.mainBtm>ul>li:nth-child(4)::after{
+    display: block;
+    content: '';
+    width: 1px;
+    height: min(1rem,40px);
+    background: rgba(255,255,255,.2);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.mainBtm>ul>li{
+    line-height: min(1.5rem,60px);
+    font-size: min(1.2em,12px);
+}
+
+/* 컨텐츠 공통 */
+.content{
+    width: 90%;
+    max-width: 700px;
+}
+.content>header h2::after{
+    width: calc(100%/ 8);
+}
+.content>header{
+    width: 100%;
+}
+.content>header h2{
+    width: 100%;
+}
+.content>header p{
+    letter-spacing : -0.5px;
+    word-spacing : -2.5px;
+    font-size: min(1.8em,18px);
+    word-break: keep-all;
+}
+.content>section{
+    margin-top: min(1rem,40px);
+}
+
+/* 컨텐츠1 */
+.cnt01 article{
+    margin: 0px 10px;
+}
+.cnt01 article > img{
+    height: fit-content;
+    width: 100%;
+}
+.cnt01 article > img:nth-child(2){
+    height: fit-content;
+    width: 80%;
+}
+
+/* 컨텐츠2 */
+.cnt02 article{
+    border-radius: min(1rem,40px);
+}
+.cnt02 article img{
+    width: 90%;
+    margin: min(1rem,40px) auto;
+}
+
+/* 컨텐츠3 */
+.cnt03 .artTop>article{
+    width: calc(100% / 3);
+}
+.cnt03 .artTop img{
+    width: 70%;
+    height: min(4.5rem,180px);
+}
+.cnt03 .artTop .texts>h3{
+    font-size: min(1.6rem,16px);
+    line-height: min(0.5rem,20px);
+}
+.artBtm>.prodInfo{
+    padding: min(1rem,40px) 0;
+}
+.artBtm>.prodInfo img{
+    height: min(8rem,320px);
+}
+.artBtm>.prodInfo>.texts{
+    padding: 0;
+}
+.artBtm>.prodInfo>.texts>h3{
+    font-size: min(2.4em,24px);
+    line-height: min(0.75rem,30px);
+}
+.artBtm>.prodInfo>.texts>p{
+    font-size: min(1.2em,12px);
+    width: 100%;
+}
+.artBtm>.detailInfo>.texts{
+    line-height: min(1rem,40px);
+    font-size: min(1.6em,16px);
+}
+.artBtm>.detailInfo>.texts>.btn{
+    width: calc(100% / 8 * 0.5);
+}
+.artBtm>.detailInfo>.imgBox>.image{
+    width: calc(100% / 8 * 7);
+    margin: min(1rem,40px) auto; 
+}
+
+/* 컨텐츠4 */
+.cnt04 .artTop{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cnt04 .artTop article{
+    width: calc(100% / 2 - 20px);
+    margin: 0px 10px;
+}
+.cnt04 .artTop .texts p{
+    font-size: min(1.8em,18px);
+    line-height: min(0.75rem,30px);
+    letter-spacing: 1.5px;
+}
+.cnt04 .artBtm{
+    margin-top: min(2rem,80px);
+}
+.cnt04 .artBtm .image{
+    width: 80%;
+}
+.cnt04 .artBtm .texts p {
+    font-size: min(1.8em,18px);
+}
+
+/* 컨텐츠5 */
+.cnt05 section{
+    display: block;
+}
+.cnt05 article{
+    width: 100%;
+    margin-bottom: min(1rem,40px);
+}
+.cnt05 article:nth-child(n+5){
+    margin-bottom: min(1rem,40px);
+}
+
+/* 컨텐츠6 */
+.cnt06 article{
+    width: 47%;
+}
+.cnt06 .texts p{
+    font-size: min(1.8em,18px);
+    line-height: min(1rem,40px);
+    word-spacing : -2px;
+    height: min(2rem,80px);
+}
+
+/* 컨텐츠7 */
+.cnt07 .artTop article{
+    width: 47%;
+    height: min(11.5rem,460px);
+}
+.cnt07 .artTop .texts{
+    font-size: min(1.8em,18px);
+}
+.cnt07 .artBtm article{
+    width: 47%;
+}
+.cnt07 .artBtm .texts span{
+    font-size: min(1.8em,18px);
+}

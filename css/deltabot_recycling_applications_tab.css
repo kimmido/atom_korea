@@ -1,0 +1,95 @@
+/* 메인 */
+.mainTop>.image{
+    height: min(11.5rem,460px);
+}
+.mainTop>.texts{
+    top: min(5rem,200px);
+}
+.mainTop h2{
+    font-size: min(3.6em,36px);
+    line-height: min(1rem,40px);
+}
+.mainBtm>ul{
+    width: 90%;
+    max-width: 700px;
+    flex-wrap: wrap;
+}
+.mainBtm>ul>li:nth-child(4)::after{
+    display: block;
+    content: '';
+    width: 1px;
+    height: min(1rem,40px);
+    background: rgba(255,255,255,.2);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.mainBtm>ul>li{
+    line-height: min(1.5rem,60px);
+    font-size: min(1.2em,12px);
+    width: calc(100% / 3);
+}
+/* 컨텐츠 */
+.content{
+    width: 90%;
+    max-width: 700px;
+}
+.content>header li::after{
+    width: calc(100%/ 4);
+}
+.content>header>ul{
+    width: 100%;
+}
+.content>header li{
+    width: calc(100% / 2);
+    margin: 0 auto;
+}
+.content>header>ul>li:nth-child(odd)::before{
+    display: none;
+}
+.content>header>ul>li:nth-child(even)::before{
+    display: inline-block;
+    content: '/';
+    font-weight: normal;
+    position: absolute;
+    left: 0;
+}
+section h3{
+    font-size: min(2.4em,24px);
+}
+section p{
+    font-size: min(1.8em,18px);
+    line-height: min(0.75rem,30px);
+    margin-top: min(0.5rem,20px);
+}
+.content article{
+    display: block;
+}
+.content article:nth-child(even){
+    direction: ltr;
+}
+.content article:nth-child(1)~article{
+    margin-top: min(3rem,120px);
+}
+.content article h3>em{
+    font-size: min(2.2em,22px);
+    margin-top: 5px;
+}
+.content article h5{
+    margin-top: min(0.5rem,20px);
+    font-size: min(2.0em,20px);
+}
+.content article ul>li{
+    width: 50%;
+    font-size: min(1.8em,18px);
+}
+.content article>.image{
+    width: 100%;
+    height: min(11rem,440px);
+}
+.content article>.texts{
+    width: 100%;
+    margin-top: min(1rem,40px);
+}

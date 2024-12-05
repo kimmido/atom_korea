@@ -1,0 +1,104 @@
+/* 메인 */
+.mainTop>.image{
+    height: min(11.5rem,460px);
+}
+.mainTop>.texts{
+    top: min(5rem,200px);
+}
+.mainTop h2{
+    font-size: min(3.6em,36px);
+    line-height: min(1rem,40px);
+}
+.mainBtm>ul{
+    width: 90%;
+    max-width: 700px;
+    flex-wrap: wrap;
+}
+.mainBtm>ul>li:nth-child(4)::after{
+    display: block;
+    content: '';
+    width: 1px;
+    height: min(1rem,40px);
+    background: rgba(255,255,255,.2);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.mainBtm>ul>li{
+    line-height: min(1.5rem,60px);
+    font-size: min(1.2em,12px);
+    width: calc(100% / 3);
+}
+/* 컨텐츠 */
+.content{
+    width: 90%;
+    max-width: 700px;
+}
+.content>header li::after{
+    width: calc(100%/ 4);
+}
+.content>header>ul{
+    width: 100%;
+}
+.content>header li{
+    width: calc(100% / 2);
+    margin: 0 auto;
+}
+.content>header>ul>li:nth-child(odd)::before{
+    display: none;
+}
+.content>header>ul>li:nth-child(even)::before{
+    display: inline-block;
+    content: '/';
+    font-weight: normal;
+    position: absolute;
+    left: 0;
+}
+.content .artTop>article{
+    width: calc(100% / 3);
+}
+.content .artTop .image{
+    height: min(4.5rem,180px);
+}
+.content .artTop .texts>h3{
+    font-size: min(1.6rem,16px);
+}
+.artBtm>.prodInfo{
+    padding: min(1rem,40px) 0;
+}
+.artBtm>.prodInfo>.image{
+    height: min(8rem,320px);
+}
+.artBtm>.prodInfo>.texts{
+    padding: 0;
+}
+.artBtm>.prodInfo>.texts>h3{
+    font-size: min(2.4em,24px);
+    line-height: min(0.75rem,30px);
+    margin-bottom: min(0.5rem,20px);
+}
+.artBtm>.prodInfo>.texts>h3>span{
+    display: none;
+}
+.artBtm>.prodInfo>.texts>h5{
+    font-size: min(1.6em,16px);
+    line-height: min(0.75rem,30px);
+}
+.artBtm>.prodInfo>.texts>p{
+    line-height: min(0.5rem,20px);
+    font-size: min(1.2em,12px);
+    width: 100%;
+}
+.artBtm>.detailInfo>.texts{
+    line-height: min(1rem,40px);
+    font-size: min(1.6em,16px);
+}
+.artBtm>.detailInfo>.texts>.btn{
+    width: calc(100% / 8 * 0.5);
+}
+.artBtm>.detailInfo>.imgBox>.image{
+    width: calc(100% / 8 * 7);
+    margin: min(1rem,40px) auto; 
+}

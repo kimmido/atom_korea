@@ -1,0 +1,80 @@
+/* 메인 슬라이드 */
+main article>.image{
+    height: min(21rem,840px);
+}
+main article>.texts{
+    width: 90%;
+    max-width: 700px;
+    left: max(calc((100vw - 700px) / 2),calc((100vw - 90%) / 2));
+}
+main article>.texts>h2{
+    font-size: min(1.25rem,50px);
+}
+main article>.texts>p{
+    width: 100%;
+    font-size: min(1.8em,18px);
+}
+.mainWrap>ul{
+    width: calc(100% / 8 * 1.2);
+    bottom: min(1rem,40px);
+}
+.mainWrap>.scroll{
+    display: none;
+}
+
+/* 컨텐츠 */
+.content{
+    width: 90%;
+    max-width: 700px;
+}
+.cnt01>section{
+    margin-top: min(0.5rem,20px);
+}
+.cnt01>header>h2{
+    font-size: min(2.8em,28px);
+}
+.cnt01 .artTop>article{
+    width: calc(100% / 3 - 10px);
+    margin-top: min(0.5rem,20px);
+}
+.cnt01 .artTop .image{
+    height: min(4.5rem,180px);
+    border-radius: 10px;
+}
+.cnt01 .artTop .texts{
+    left: 10px;
+    font-size: min(1.6em,16px);
+    line-height: min(1.25rem,50px);
+}
+.cnt01 .artBtm .image{
+    width: calc(100% / 8 * 4);
+    height: min(6rem,240px);
+    border-radius: 10px;
+}
+.cnt01 .artBtm .texts{
+    width: calc(50% - 20px);
+}
+.cnt01 .artBtm .texts>h3{
+    font-size: min(2.4em,24px);
+    line-height: min(1.5rem,60px);
+}
+.cnt01 .artBtm .texts>p{
+    font-size: min(1.6em,16px);
+    line-height: min(0.5rem,20px);
+}
+.cnt02>section>article{
+    width: calc(100% / 3 - 20px);
+}
+.cnt02>section>article>.video{
+    height: min(4rem,160px);
+}
+.cnt02>section>article>.texts{
+    padding-left: 0px;
+}
+.cnt02>section>article>.texts>h3{
+    display: block;
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

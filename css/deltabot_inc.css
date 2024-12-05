@@ -1,0 +1,386 @@
+@font-face {
+    font-family: NanumGothic;
+    src: url('./fonts/NanumGothic-Regular.ttf');
+}
+html{
+    font-size: 2.2vw;
+    font-family: NanumGothic;
+}
+body{
+    font-size: 0.5vw;
+    position: relative;
+}
+a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+/* 헤더 */
+.hdrWrap{
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+}
+.hdrWrap>header{
+    width: 80%;
+    max-width: 1420px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    line-height: min(2rem,80px);
+}
+header>.logo{
+    width: calc(100% / 16 * 2);
+    height: min(2rem,80px);
+    background-image: url('../image/delta_logo1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.hdrWrap .nav{
+    display: flex;
+    justify-content: space-around;
+    width: calc(100% / 16 * 9);
+    text-transform: uppercase;
+    font-size: min(1.8em,18px);
+    font-weight: 700;
+    color: #333;
+}
+.hdrWrap .nav>li{
+    cursor: pointer;
+    text-align: center;
+    width: calc(100% / 4);
+}
+.hdrWrap h4{
+    font-size: min(3.2em,32px);
+    cursor: pointer;
+    width: calc(100% / 16);
+    text-align-last: right;
+    display: none;
+}
+/* 메뉴 */
+.menuWrap{
+    position: fixed;
+    top: 0;
+}
+.pcWrap{
+    background-color: rgb(225 225 225 / 95%);
+    left: 0;
+    width: 100%;
+    height: 0;
+    z-index: 19;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.mobileWrap{
+    display: none;
+}
+.pcWrap.on{
+    height: min(9rem,360px);
+}
+.pcWrap>.menu{
+    width: 80%;
+    max-width: 1420px;
+    margin: 0 auto;
+    padding: min(2.5rem,100px) 0 min(0.5rem,20px);
+}
+.pcWrap>.menu>.mnBox{
+    display: flex;
+    justify-content: left;
+    width: calc(100% / 16 * 9);
+    color: #333;
+    margin-left: calc(100% / 16 * 7);
+}
+.pcWrap>.menu>.mnBox>ul{
+    text-align: center;
+    font-size: min(1.8em,18px);
+    line-height: min(1rem,40px);
+    width: calc(100% / 4);
+}
+.pcWrap>.menu>.mnBox>ul>li:hover{
+    color: #4cb300;
+    font-weight: 600;
+}
+/* 풋터 */
+.ftrWrap{
+    margin-top: min(2rem,80px);
+    background-color: #ddd;
+}
+.footer{
+    width: 80%;
+    max-width: 1420px;
+    margin: 0 auto;
+    padding: min(1rem,40px) 0;
+    color: #333;
+    font-size: min(1.4em,14px);
+    line-height: min(0.5rem,20px);
+}
+.footer .logo{
+    width: calc(100% / 16 * 2);
+    height: min(2rem,80px);
+    background-image: url('../image/delta_logo2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.footer ul{
+    width: calc(100% / 16 * 8);
+    min-width: 580px;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+.footer ul>li{
+    margin-left: 25px;
+}
+.footer ul>li:nth-child(1){
+    margin-left: 0px;
+}
+.footer ul>li:nth-child(4){
+    margin-left: 0px;
+}
+.footer ul>li:nth-child(4){
+    margin-left: 0px;
+}
+.footer>h4{
+    line-height: min(1rem,40px);
+}
+.fixed{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 999;
+}
+.youtube{
+    width: 70px;
+    height: 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../image/youtube.png');
+}
+.top{
+    margin-top: 20px;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    background-color: #4cb300;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+    html{
+        font-size: 5vw;
+    }
+    body{
+        position: relative;
+        font-size: 1.2vw;
+        font-family: xeicon;
+    }
+
+    /* 헤더 */
+    .hdrWrap>header{
+        width: 90%;
+        max-width: 700px;
+    }
+    header>.logo{
+        width: calc(100% / 8 * 2);
+    }
+    .hdrWrap .nav{
+        display: none;
+    }
+    .hdrWrap h4{
+        display: block;
+        width: calc(100% / 8 * 0.4);
+    }
+    
+    /* 메뉴 */
+    .mobileWrap{
+        display: block;
+        z-index: 30;
+        left: 0;
+        width: 100%;
+        height: 0;
+    }
+    .mobileWrap>.mnbg{
+        background-color: rgba(0,0,0,0.7);
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    .mobileWrap>.menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        width: 500px;
+        margin-left: -500px;
+        transition: all 0.5s;
+    }
+    .mobileWrap .mnTop{
+        padding: 0px 15px;
+        display: flex;
+        justify-content: space-between;
+        line-height: min(1.75rem,70px);
+        background-color: #eee;
+    }
+    .mobileWrap .mnTop>.logo{
+        width: 160px;
+        height: min(1.75rem,70px);
+        background-image: url('../image/delta_logo1.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .mobileWrap .mnTop>h4{
+        width: 32px;
+        font-size: min(3.2em,32px);
+    }
+    .mobileWrap .mnBtm>ul>li{
+        padding: 0px 15px;
+        color: #333;
+    }
+    .mobileWrap .mnBtm>ul>li:nth-child(odd){
+        line-height: min(1.5rem,60px);
+        font-size: min(2.0em,20px);
+        font-weight: 600;
+        text-transform: uppercase;
+        border-bottom: 0.2px solid #ddd;
+    }
+    .mobileWrap .mnBtm>ul>li:nth-child(odd).aco{
+        color: #fff;
+        background-color: #4cb300;
+    }
+    .mobileWrap .mnBtm>ul>li:nth-child(even){
+        line-height: min(1rem,40px);
+        font-size: min(1.6em,16px);
+        background-color: #eee;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.3s;
+    }
+    .mobileWrap .mnBtm>ul>li:nth-child(even).show{
+        height: 240px;
+    }
+
+    /* 풋터 */
+    .footer{
+        width: 90%;
+        max-width: 700px;
+    }
+    .footer .logo{
+        width: calc(100% / 8 * 2);
+    }
+    .footer ul{
+        width: calc(100% / 8 * 7);
+        min-width: auto;
+    }
+    .footer ul>li{
+        margin-left: 15px;
+    }
+    .footer ul>li:nth-child(3){
+        margin-left: 0px;
+    }
+    .footer ul>li:nth-child(4){
+        margin-left: 15px;
+    }
+} 
+
+@media (max-width: 430px) {
+
+    /* 헤더 */
+    .hdrWrap>header{
+        line-height: 80px;
+    }
+    header>.logo{
+        width: calc(100% / 4 * 1.8);
+        height: 80px;
+    }
+    .hdrWrap h4{
+        font-size: 32px;
+        width: calc(100% / 4);
+    }
+
+    /* 메뉴 */
+    .mobileWrap>.menu{
+        width: 100vw;
+    }
+    .mobileWrap .mnTop{
+        line-height: 80px;
+        padding: 0 15px;
+    }
+    .mobileWrap .mnTop>.logo{
+        height: 80px;
+        width: 150px;
+    }
+    .mobileWrap .mnTop>h4{
+        font-size: 32px;
+    }
+    .mobileWrap .mnBtm>ul>li:nth-child(odd){
+        line-height: 50px;
+        font-size: 16px;
+    }
+    .mobileWrap .mnBtm>ul>li:nth-child(even){
+        line-height: 30px;
+        font-size: 14px;
+    }
+    .mobileWrap .mnBtm>ul>li:nth-child(even).show{
+        height: 180px;
+    }
+
+    /* 풋터 */
+    .ftrWrap{
+        margin-top: 40px;
+    }
+    .footer{
+        padding: 40px 0px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .footer .logo{
+        width: calc(100% / 4 * 1.8);
+        height: 80px;
+    }
+    .footer ul{
+        width: 100%;
+        min-width: auto;
+    }
+    .footer ul>li{
+        margin-left: 0px;
+    }
+    .footer span{
+        display: none;
+    }
+    .footer ul>li:nth-child(6){
+        margin-left: 15px;
+    }
+    .footer>h4{
+        line-height: 40px;
+    }
+    .fixed{
+        bottom: 15px;
+        right: 15px;
+    }
+    .youtube{
+        width: 50px;
+        height: 50px;
+    }
+    .top{
+        width: 50px;
+        height: 50px;
+        font-size: 14px;
+        line-height: 25px;
+        margin-top: 10px;
+    }
+}

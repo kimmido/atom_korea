@@ -1,0 +1,80 @@
+/* 메인 */
+.mainTop>.image{
+    height: min(11.5rem,460px);
+}
+.mainTop>.texts{
+    top: min(5rem,200px);
+}
+.mainTop h2{
+    font-size: min(3.6em,36px);
+    line-height: min(1rem,40px);
+}
+.mainBtm>ul{
+    width: 90%;
+    max-width: 700px;
+    flex-wrap: wrap;
+}
+.mainBtm>ul>li:nth-child(4)::after{
+    display: block;
+    content: '';
+    width: 1px;
+    height: min(1rem,40px);
+    background: rgba(255,255,255,.2);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.mainBtm>ul>li{
+    line-height: min(1.5rem,60px);
+    font-size: min(1.2em,12px);
+    width: calc(100% / 3);
+}
+/* 컨텐츠 */
+.content{
+    width: 90%;
+    max-width: 700px;
+}
+.content>header li::after{
+    width: calc(100%/ 8);
+}
+.content>header>ul{
+    width: 100%;
+}
+.content>header li{
+    width: 100%;
+    margin: 0 auto;
+}
+section h3{
+    font-size: min(2.4em,24px);
+}
+section p{
+    font-size: min(1.8em,18px);
+    line-height: min(0.75rem,30px);
+}
+.artTop .image{
+    margin-top: min(2rem,80px);
+    margin-left: min(calc((100vw - 700px) / -2),calc((100vw - 90vw) / -2));
+    height: min(11rem,440px);
+}
+.artBtm{
+    margin-top: min(3rem,120px);
+}
+.artBtm>article:nth-child(2){
+    margin-top: min(3rem,120px);
+}
+.artBtm>article{
+    display: block;
+}
+.artBtm .image{
+    height: min(8rem,320px);
+    width: 100%;
+}
+.artBtm .texts{
+    width: 100%;
+    margin-top: min(1rem,40px);
+}
+.artBtm>article:nth-child(2)>.texts{
+    margin-top: min(1rem,40px);
+}

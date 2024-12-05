@@ -1,0 +1,297 @@
+/* 메인 */
+.mainTop>.image{
+    height: 360px;
+}
+.mainTop>.texts{
+    top: 120px;
+}
+.mainTop h2{
+    font-size: 24px;
+    line-height: 80px;
+}
+.mainBtm>ul>li:nth-child(1):after{
+    height: 25px;
+}
+.mainBtm>ul>li:nth-child(4):after{
+    display: none;
+}
+.mainBtm>ul>li:nth-child(2n+3):after{
+    height: 25px;
+    display: block;
+    content: '';
+    width: 1px;
+    background: rgba(255,255,255,.2);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.mainBtm>ul>li::before{
+    height: 25px;
+}
+.mainBtm>ul>li{
+    width: calc(100% / 2);
+    line-height: 40px;
+    font-size: 12px;
+}
+/* 컨텐츠 */
+.cntWrap{
+    margin-top: 40px;
+}
+.content>header h2{
+    font-size: 14px;
+    line-height: 40px;
+}
+.content>header h2::after{
+    width: 60px !important;
+    height: 2px !important;
+}
+.content>header p{
+    font-size: 14px;
+    line-height: 20px;
+}
+.content>section{
+    margin-top: 40px;
+}
+section h3{
+    font-size: 18px;
+    line-height: 30px;
+}
+section p{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/* 컨텐츠1 */
+.cnt01 .video{
+    height: 240px;
+}
+
+/* 컨텐츠2 */
+.cnt02>section>article{
+    display: block;
+}
+.cnt02 .txtLeft, .cnt02 .txtRight {
+    width: 100%;
+}
+.cnt02 .texts{
+    padding: 15px;
+    margin-top: 20px;
+    height: 110px;
+}
+.cnt02 .txtLeft .texts:first-child{
+    margin-top: 0px;
+}
+.cnt02 p{
+    margin-top: 5px;
+}
+
+/* 컨텐츠3 */
+.cntWrap03{
+    padding: 40px 0px;
+}
+.cnt03{
+    width: 100%;
+}
+.cnt03_swiper {
+    width: 100%;
+
+}
+.cnt03 .swiper-slide{
+    padding: 20px 0px;
+    transition: all 0.3s;
+}
+.cnt03 .swiper-slide>.image{
+    height: 380px;
+    transition: all 0.3s;
+}
+.cnt03_swiper .swiper-slide-next>.image,.cnt03_swiper .swiper-slide-prev>.image{
+    height: 340px;
+}
+.cnt03_swiper .swiper-slide-next,.cnt03_swiper .swiper-slide-prev{
+    margin-top: 20px;
+    opacity: 50%;
+}
+
+/* 컨텐츠4 */
+.cnt04_item .art1{
+    margin-top: 40px;
+    display: block;
+}
+.cnt04_item .art1 .image{
+    width: 100%;
+    height: 300px;
+}
+.cnt04_item .art1 .texts{
+    width: 100%;
+}
+.cnt04_item .art1 .texts h3{
+    font-size: 22px;
+    text-align: center;
+}
+.cnt04_item .art1 .texts ul{
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 25px;
+}
+.cnt04_item .art2{
+    margin-top: 40px;
+}
+.cnt04_item .art3{
+    margin-top: 40px;
+}
+.cnt04_item .art3 .video{
+    height: 240px;
+}
+.cnt04_item .art3 .texts{
+    display: block;
+    padding-top: 20px;
+}
+.cnt04_item .art3 .txtTop{
+    width: 100%;
+    border-radius: 30px;
+    border: 2px solid #4cb300;
+    padding: 20px;
+    font-size: 14px;
+    line-height: 25px;
+}
+.cnt04_item .art3 .txtBtm{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 10px;
+    letter-spacing: -1.5px;
+}
+.cnt04_item .art3 .txtBtm>div{
+    width: calc(100% / 2 - 5px);
+}
+.cnt04_item .art3 .txtBtm .img{
+    height: 40px;
+}
+.cnt04_item .art3 .txtBtm .txt{
+    padding-top: 0px;
+}
+
+/* 컨텐츠5 */
+.cnt05 article{
+    margin-top: 40px;
+    /* display: block; */
+    flex-direction: column;
+}
+.cnt05 article:nth-child(even){
+    flex-direction: column-reverse;
+}
+.cnt05 .image{
+    width: 100%;
+    border-radius: 30px;
+    height: 200px;
+}
+.cnt05 .image img{
+    padding-top: 20px;
+}
+.cnt05 .texts{
+    width: 100%;
+}
+.cnt05 .texts h3{
+    font-size: 18px;
+}
+.cnt05 .texts p{
+    width: 95%;
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 20px;
+}
+
+/* 컨텐츠6 */
+.swiper-pagination-bullet, .slide_tit>li{
+    width: 10px !important;
+    height: 10px !important;
+}
+.swiper-pagination-bullet span{
+    display: none;
+}
+.cnt06 .image{
+    height: 200px;
+}
+.cnt06 .texts{
+    margin-top: 20px;
+}
+.cnt06 .texts h3{
+    line-height: 40px;
+}
+.cnt06 .texts p{
+    font-size: 14px;
+    line-height: 25px;
+}
+
+/* 컨텐츠7 */
+.cnt07 .artTop article{
+    margin-bottom: 20px;
+    border-radius: 60px;
+    padding: 10px;
+}
+.cnt07 .artTop .image{
+    height: 50px;
+    max-width: 50px;
+    width: 20%;
+    margin: auto 0;
+}
+.cnt07 .texts{
+    width: 80%;
+    margin-left: 15px;
+}
+.cnt07 .texts h3{
+    font-size: 16px;
+    line-height: 30px;
+    word-spacing: -4px;
+    margin-top: 0px;
+}
+.cnt07 .artBtm .image{
+    display: none;
+}
+
+/* 컨텐츠8 */
+.cnt08 section{
+    display: block;
+}
+.cnt08 article{
+    width: 100%;
+}
+.cnt08 article:nth-child(n+2){
+    margin-top: 20px;
+}
+.cnt08 h3{
+    line-height: 30px;
+    font-size: 18px;
+}
+.cnt08 span{
+    display: inline;
+    font-size: 14px;
+    line-height: 30px;
+}
+.cnt08 .image{
+    height: 200px;
+}
+
+/* 컨텐츠9 */
+.cnt09 article{
+    width: calc(100% / 2 - 5px);
+}
+.cnt09 article:nth-child(n+3){
+    margin-top: 5px;
+}
+
+/* 컨텐츠10 */
+.cnt10 article{
+    width: calc(100% / 2 - 5px);
+}
+.cnt10 article:nth-child(n+3){
+    margin-top: 5px;
+}
+.cnt10 article:nth-child(n+9){
+    display: block;
+}

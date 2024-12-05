@@ -1,0 +1,217 @@
+html{
+    font-size: 5vw;
+}
+body{
+    position: relative;
+    font-size: 1.2vw;
+    font-family: xeicon;
+}
+.hdrWrap>header{
+    width: 90%;
+    max-width: 700px;
+}
+header>.logo{
+    width: calc(100% / 8 * 2);
+}
+.hdrWrap .nav{
+    display: none;
+}
+.hdrWrap h4{
+    display: block;
+    width: calc(100% / 8 * 0.4);
+}
+/* 메뉴 */
+.mobileWrap{
+    display: block;
+    z-index: 30;
+    left: 0;
+    width: 100%;
+    height: 0;
+}
+.mobileWrap>.mnbg{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+}
+.mobileWrap>.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 500px;
+    margin-left: -500px;
+    transition: all 0.5s;
+}
+.mobileWrap .mnTop{
+    padding: 0px 15px;
+    display: flex;
+    justify-content: space-between;
+    line-height: min(1.75rem,70px);
+    background-color: #eee;
+}
+.mobileWrap .mnTop>.logo{
+    width: 160px;
+    height: min(1.75rem,70px);
+    background-image: url('../image/delta_logo1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.mobileWrap .mnTop>h4{
+    width: 40px;
+    font-size: min(3.2em,32px);
+}
+.mobileWrap .mnBtm>ul>li{
+    padding: 0px 15px;
+    color: #333;
+}
+.mobileWrap .mnBtm>ul>li:nth-child(odd){
+    line-height: min(1.5rem,60px);
+    font-size: min(2.0em,20px);
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 0.2px solid #ddd;
+}
+.mobileWrap .mnBtm>ul>li:nth-child(odd).aco{
+    color: #fff;
+    background-color: #4cb300;
+}
+.mobileWrap .mnBtm>ul>li:nth-child(even){
+    line-height: min(1rem,40px);
+    font-size: min(1.6em,16px);
+    background-color: #eee;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.mobileWrap .mnBtm>ul>li:nth-child(even).show{
+    height: 240px;
+}
+/* 메인 */
+.mainTop>.image{
+    height: min(10rem,400px);
+}
+.mainTop>.texts{
+    top: min(5rem,200px);
+}
+.mainTop h2{
+    font-size: min(3.6em,36px);
+    line-height: min(1rem,40px);
+}
+.mainBtm>ul{
+    width: 90%;
+    max-width: 700px;
+    flex-wrap: wrap;
+}
+.mainBtm>ul::before{
+    top: min(0.25rem,10px);
+    margin: 0;
+}.mainBtm>ul::after{
+    display: block;
+    content: '';
+    width: 1px;
+    height: min(1rem,40px);
+    background: rgba(255,255,255,.2);
+    position: absolute;
+    bottom: min(0.25rem,10px);
+    left: 0;
+    margin: auto;
+    margin: 0;
+}
+.mainBtm>ul>li{
+    line-height: min(1.5rem,60px);
+    font-size: min(1.2em,12px);
+    width: calc(100% / 3);
+}
+/* 컨텐츠1 */
+.content{
+    width: 90%;
+    max-width: 700px;
+}
+.content>header li::after{
+    width: calc(100%/ 8);
+}
+.content>section{
+    margin-top: min(1rem,40px);
+}
+.cnt01 .image{
+    width: calc(100% / 8 * 6);
+    margin: 0 auto;
+}
+/* 배너 */
+.bnrWrap{
+    padding: min(1.5rem,60px) 0;
+}
+.banner .image{
+    width: 80%;
+    height: min(3.5rem,140px);
+}
+.banner>article{
+    width: calc(100% / 4 - 10px);
+}
+.banner .texts{
+    font-size: min(1.6em,16px);
+}
+/* 컨텐츠2 */
+.cnt02 section{
+    margin-top: min(1.5rem,60px);
+}
+.cnt02 section>article{
+    display: block;
+}
+.cnt02 .txtLeft,.txtRight{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.cnt02 .txtRight{
+    margin-top: min(1rem,40px);
+}
+.cnt02>header h2::after{
+    width: calc(100%/ 8);
+}
+.cnt02 .texts{
+    padding: min(0.75rem,30px) 0 0;
+    height: min(5rem,200px);
+    font-size: min(1.4em,14px);
+    line-height: min(0.5rem,20px);
+    width: calc(100% / 2 - 20px);
+}
+.cnt02 .texts:nth-child(2){
+    margin-top: 0;
+}
+.cnt02 .texts>h3{
+    width: calc(100% / 4 * 2);
+    top: -20px;
+}
+.cnt02 .image{
+    height: min(13rem,520px);
+    width: 100%;
+    margin-top: min(0.5rem,20px);
+}
+/* 컨텐츠3 */
+.cnt03>section>article>.video{
+    height: min(5rem,200px);
+}
+
+/* 풋터 */
+.footer{
+    width: 90%;
+    max-width: 700px;
+}
+.footer .logo{
+    width: calc(100% / 8 * 2);
+}
+.footer ul{
+    width: calc(100% / 8 * 7);
+}
+.footer ul>li{
+    margin-left: 15px;
+}
+.footer ul>li:nth-child(3){
+    margin-left: 0px;
+}
+.footer ul>li:nth-child(4){
+    margin-left: 15px;
+}
