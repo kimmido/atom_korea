@@ -1,0 +1,129 @@
+/* 메인 슬라이드 */
+.mainWrap{
+    margin-top: var(--header-height-M);
+}
+main article>.image{
+    height: 180px;
+}
+main article>.texts{
+    top: 180px;
+}
+main article>.texts>h2{
+    font-size: 22px;
+    line-height: 30px;
+}
+main article>.texts>p{
+    font-size: 12px;
+    line-height: 20px;
+}
+.mainWrap>ul{
+    width: calc(100% / 4);
+    bottom: 20px;
+}
+/* 컨텐츠 공통 */
+.cntWrap{
+    margin-top: 40px;
+}
+.content>header>h2{
+    font-size: 24px;
+    line-height: 40px;
+}
+section{
+    margin-top: 40px;
+}
+/* 컨텐츠1 */
+.cnt01 article>.image{
+    height: 320px;
+}
+.cnt01 article>.texts{
+    margin-top: 40px;
+}
+.cnt01 article>.texts>ul>li.on p,.cnt01 article>.texts>ul>li.on .btn{
+    margin-top: 20px;
+}
+.cnt01 .texts .txt{
+    padding: 30px 0px;
+}
+.cnt01 .texts .tit>h3,.cnt01 .texts .tit>i{
+    font-size: 22px;
+    line-height: 40px;
+}
+.cnt01 .texts .txt>h5{
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+.cnt01 .texts .txt>p{
+    line-height: 20px;
+    font-size: 12px;
+    width: calc(100% / 4 * 3.8);
+}
+.cnt01 .texts .txt>.btn{
+    font-size: 22px;
+    line-height: 40px;
+}
+.cnt01 .texts .txt>.btn>a{
+    width: calc(100% / 4 * 0.5);
+}
+/* 컨텐츠2 */
+.cnt02 section>.artGroup{
+    width: 1000%;
+    gap: 2%;
+}
+.cnt02 section>.artGroup>article{
+    flex: 0 0 6%;
+    padding-top: 40px;
+}
+.cnt02 section>.artGroup>article .image{
+    width: min(100% , 200px);
+    padding-top: 100%;
+    margin: 0 auto;
+}
+.cnt02 article>.texts{
+    margin-top: 60px;
+}
+.cnt02 article>.texts>h3{
+    font-size: 22px;
+    line-height: 30px;
+}
+.cnt02 article>.texts>p{
+    font-size: 12px;
+    line-height: 20px;
+}
+.cnt02 article>.texts>.btn{
+    width: calc(100% / 4 * 2);
+    font-size: 12px;
+    line-height: 30px;
+}
+.cnt02>section>.btn{
+    width: 100%;
+    height: 40px;
+    top: 120px;
+    font-size: 22px;
+    line-height: 40px;
+}
+/* 컨텐츠3 */
+.cnt03 .video{
+    height: 280px;
+}
+.cnt03 article>.texts>ul>li{
+    font-size: 16px;
+    line-height: 40px;
+}
+.cnt03 article>.texts>ul>li.show>span{
+    width: 33px;
+    height: 33px;
+}
+.cnt03 article>.texts>ul>li.show::before{
+    width: 30px;
+    height: 30px;
+}
+.cnt03 article>.texts>ul>li.show::after{
+    width: calc(100% / 4 * 0.7);
+}
+.cnt03 article>.texts>ul>li::after{
+    right: 15px;
+}
+.cnt03 article>.texts>ul>li>h3{
+    height: 40px;
+}

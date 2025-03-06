@@ -1,25 +1,10 @@
 $(function(){
     var artGroup = $('main .artGroup');
-    var artGroup2 = $('.cnt02 .artGroup');
     var li = $('.mainWrap>ul>li');
     var wheel = $('.wheel');
-    var wd = $(window).width();
-    var mvLeft = 0;
-    var mvRight = 0;
-    var mv = 0;
 
-    if(wd > 420){
-        mvLeft = 37.7;
-        mvRight = 75.4;
-        mv = 0;
-    }else{
-        mvLeft = 200;
-        mvRight = 300;
-        mv = 100;
-    }
 
     // 메인 슬라이드
-
     artGroup.find('article:last').prependTo(artGroup);
     artGroup.css({
         marginLeft : '-100%'
@@ -138,61 +123,7 @@ $(function(){
         $('.cnt01 article>.image').css("background-image",pic);
     });
 
-    // 컨텐츠2
-    artGroup2.find('article:last').prependTo(artGroup2);
-    artGroup2.css({
-        marginLeft : -mvLeft+'%'
-    });
-
-    function slide2 (){
-        artGroup2.find('article>.image').css('transform','scale(1)');
-        artGroup2.stop().animate({
-            marginLeft : -mvRight+'%'
-        },500,function(){
-            artGroup2.find('article:first').appendTo(artGroup2);
-            artGroup2.find('article:eq(2)>.image').css('transform','scale(1.35)');
-            artGroup2.css({
-                marginLeft : -mvLeft+'%'
-            });
-        });
-    }
-    function left2(){
-        artGroup2.find('article>.image').css('transform','scale(1)');
-        artGroup2.stop().animate({
-            marginLeft : -mv+'%'
-        },300,function(){
-            artGroup2.find('article:last').prependTo(artGroup2);
-            artGroup2.find('article:eq(2)>.image').css('transform','scale(1.35)');
-            artGroup2.css({
-                marginLeft : -mvLeft+'%'
-            });
-        });
-    }
-    function right2(){
-        artGroup2.find('article>.image').css('transform','scale(1)');
-        artGroup2.stop().animate({
-            marginLeft : -mvRight+'%'
-        },300,function(){
-            artGroup2.find('article:first').appendTo(artGroup2);
-            artGroup2.find('article:eq(2)>.image').css('transform','scale(1.35)');
-            artGroup2.css({
-                marginLeft : -mvLeft+'%'
-            });
-        });
-    }
-    $('.cnt02 .left').click(function(){   
-        left2();
-    });
-    $('.cnt02 .right').click(function(){
-        right2();
-    });
-    artGroup2.swipeleft(function(){
-        right2();
-    });
-    artGroup2.swiperight(function(){
-        left2();
-    })
-    setInterval(slide2,10000);
+  
 
     // 컨텐츠3
     var tab = $('.cnt03 .tab>li');

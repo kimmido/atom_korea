@@ -4,6 +4,14 @@ html문서의 스타일을 만들기 쉽게 하기 위해 스타일을 사용 �
 초기설정하기 위한 CSS문서를 CSS초기화라고 합니다.
 */
 
+:root {
+	--color-point: #FF0101;
+	--color-point: #d00f1f;
+
+	--header-height: min(2rem, 80px);
+	--header-height-M: 66px;
+}
+
 /*
 b요소제거
 main요소, hr요소 추가
@@ -67,4 +75,7 @@ form{
     outline: 0;
 }
 
-
+img {
+	width: 100%;
+	height: auto;
+}

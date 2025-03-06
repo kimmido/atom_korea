@@ -1,0 +1,71 @@
+main{
+    text-align: center;
+    position: relative;
+}
+.mainTop{
+    position: relative;
+}
+.mainTop>.image{
+    width: 100%;
+    height: min(12rem,480px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  center;
+}
+
+#deltaRobotD2 .mainTop>.image,
+#deltaRobotDD2 .mainTop>.image,
+#deltaRobotD3W .mainTop>.image,
+#deltaRobotD3WB .mainTop>.image,
+#deltaRobotD3WZ .mainTop>.image,
+#deltaRobotD3WZ .mainTop>.image,
+#deltaRobotD3WZ .mainTop>.image,
+#deltaRobotD3WZ .mainTop>.image,
+#deltaRobotD3WZ .mainTop>.image,
+#deltaRobotD2 .mainTop>.image {
+    background-image: url('../../../image/heading/delta-robot.JPG');
+}
+#scaraST .mainTop>.image,
+#scaraMBD .mainTop>.image,
+#scaraMGD .mainTop>.image {
+background-image: url('../../../image/heading/scara.JPG');
+}
+#cobotMD20 .mainTop>.image,
+#cobotMD30 .mainTop>.image,
+#cobotMD40 .mainTop>.image{
+background-image: url('../../../image/heading/cobot.JPG');
+}
+#controlSystem .mainTop>.image{
+background-image: url('../../../image/heading/control-system.JPG');
+}
+#casePacker .mainTop>.image{
+background-image: url('../../../image/heading/case-packer.JPG');
+}
+#visionSystem .mainTop>.image{
+background-image: url('../../../image/heading/vision-system.JPG');
+}
+#foods .mainTop>.image{
+background-image: url('../../../image/heading/solution.jpg');
+}
+
+.mainTop>.texts{
+    position: absolute;
+    top: min(5rem,200px);
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.mainTop h2{
+    font-size: min(4.8em,48px);
+    line-height: min(2rem,80px);
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+.mainBtm{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: rgba(51,51,51,.8);
+}
