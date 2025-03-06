@@ -183,78 +183,98 @@ section{
 .cnt01 .title{
     padding-bottom: min(0.5rem,20px);
 }
-.cnt01 article>.image{
-    width: calc(100% / 16 * 7);
-    height: min(19.5rem,780px);
+.cnt01 .image{
+    width: calc(460 / 1420 * 100%);
+    /* height: min(19.5rem,780px); */
     background-color: #ccc;
-    background-image: url('../../../image/main_cnt01_1.jpg');
+    background-image: url('/image/main/solution_foods.jpg');
     /* box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.3); */
     transition: all 0.3s;
 }
-.cnt01 article>.texts{
-    width: calc(100% / 16 * 8);
-    margin-top: min(1.5rem,60px);
+.cnt01 .grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background-color: var(--color-point);
+    width: calc(960 / 1420 * 100%);
+    padding: 1px;
 }
-.cnt01 article>.texts>ul{
-    border-top: 2px solid #666;
-}
-.cnt01 article>.texts>ul>li{
-    border-bottom: 1px solid #ddd;
-    cursor: pointer;
-}
-.cnt01 article>.texts>ul>li p,.cnt01 article>.texts>ul>li .btn{
+.cnt01 .grid>li {
+    position: relative;
     overflow: hidden;
-    height: 0;
-    transition: height 0.3s;
-    margin-top: 0px;
+    height: min(9rem, 260px);
+    text-align: center;
+    align-content: center;
+    background-color: #fff;
 }
-.cnt01 article>.texts>ul>li.on p,.cnt01 article>.texts>ul>li.on .btn{
-    height: auto;
-    visibility: inherit;
-    margin-top: min(0.5rem,20px);
+
+.cnt01 .grid>li:hover .circle,
+.cnt01 .grid>li.on .circle {
+    left: 0;
+    top: -20%;
+    width: 100%;
+    height: 36%;
 }
-.cnt01 .texts .txt{
-    padding: min(0.5rem,40px) 0px min(0.5rem,40px) 20px;
+.cnt01 .grid>li:hover .btn, 
+.cnt01 .grid>li.on .btn {
+    opacity: 1;
 }
-.cnt01 .texts .tit{
-    display: flex;
-    justify-content: space-between;
+.cnt01 .grid>li:hover .item__inner, 
+.cnt01 .grid>li.on .item__inner {
+    transform: translateY(0);
 }
-.cnt01 .texts .tit>h3,.cnt01 .texts .tit>i{
-    font-size: min(2.8em,28px);
-    line-height: min(2rem,80px);
-    font-weight: 700;
+
+.cnt01 .grid>li .circle {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    background-color: var(--color-point);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transition: all .4s;
 }
-.cnt01 .texts .tit>i{
-    font-weight: normal;
+
+.cnt01 .grid li .item__inner{
+    position: relative;
+    transform: translateY(-8px);
+    transition: all .4s;
+}
+
+.cnt01 .grid>li .icon {
+    width: 26%;
+}
+
+.cnt01 .grid li .tit {
+    margin-top: min(0.4rem, 12px);
+    font-size: min(2.8em,24px);
     color: var(--color-point);
 }
-.cnt01 .texts .txt>h5{
-    font-size: min(1.8em,18px);
-    line-height: min(1rem,40px);
-    font-weight: 700;
+
+.cnt01 .grid>li .btn{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    width: 40%;
+    cursor: none;
+    margin-top: min(0.4rem, 18px);
+
+    transition: all .4s;
+    opacity: 0;
 }
-.cnt01 .texts .txt>p{
-    line-height: min(0.75rem,30px);
-    font-size: min(1.8em,18px);
-    width: calc(100% / 8 * 7.5);
-    color: #666;
-    word-break: keep-all;
+
+.cnt01 .grid>li .btn a {
+    background-color: var(--color-point);
+    padding: 0.2rem 0 0.26rem;
+    width: 100%;
+    font-size: 13px;
+    color: #fff;
+    border-radius: 1000px;
 }
-.cnt01 .texts .txt>.btn{
-    font-size: min(2.8em,28px);
-    line-height: min(1rem,40px);
-    color: #aaa;
-}
-.cnt01 .texts .txt>.btn>a{
-    width: calc(100% / 7.5 * 0.5);
-}
-.cnt01 .texts .txt>.btn i{
-    transition: all 0.3s;
-}
-.cnt01 .texts .txt>.btn i:hover{
-    color: var(--color-point);
-}
+
 
 /* 컨텐츠2 */
 .cnt02 section{
