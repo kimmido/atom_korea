@@ -25,21 +25,6 @@ zoomSlider.setPos = function (wd) {
     });
 }
 
-zoomSlider.slide2 = function(){
-    let self = this;
-
-    artGroup2.find('article>.image').css('transform','scale(1)');
-    artGroup2.stop().animate({
-        marginLeft : -this.mvRight+'%'
-    },500,function(){
-        artGroup2.find('article:first').appendTo(artGroup2);
-        artGroup2.find('article:eq(2)>.image').css('transform','scale(1.35)');
-        artGroup2.css({
-            marginLeft : -self.mvLeft+'%'
-        });
-    });
-}
-
 zoomSlider.left2 = function(){
     let self = this;
 
