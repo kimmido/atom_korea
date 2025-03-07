@@ -80,10 +80,10 @@ background-image: url('../../../image/heading/company.jpg');
     max-width: 1440px;
     margin: 0 auto;
     font-size: min(4.8em,48px);
-    font-weight: 600;
+    font-weight: 700;
     text-align: left;
     text-transform: uppercase;
-    color: #fff;
+    color: #ff2b3c;
     text-shadow: -3px 4px 5px rgba(0,0,0,.5);
 }
 .mainBtm{
