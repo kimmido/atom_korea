@@ -1,36 +1,3 @@
-/* 메인 */
-.mainTop>.image{
-    height: min(10rem,400px);
-}
-.mainTop>.texts{
-    top: min(4.5rem,180px);
-}
-.mainTop h2{
-    font-size: min(3.6em,36px);
-    line-height: min(1rem,40px);
-}
-.mainBtm>ul{
-    width: 90%;
-    max-width: 700px;
-    flex-wrap: wrap;
-}
-.mainBtm>ul>li:nth-child(4)::after{
-    display: block;
-    content: '';
-    width: 1px;
-    height: min(1rem,40px);
-    background: rgba(255,255,255,.2);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-}
-.mainBtm>ul>li{
-    line-height: min(1.5rem,60px);
-    font-size: min(1.2em,12px);
-    width: calc(100% / 3);
-}
 /* 컨텐츠 */
 .content{
     width: 90%;

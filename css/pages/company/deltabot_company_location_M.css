@@ -36,27 +36,6 @@ header>.logo{
 .mobileWrap .mnBtm>ul>li:nth-child(even).show{
     height: 180px;
 }
-/* 메인 */
-.mainTop>.image{
-    height: 280px;
-}
-.mainTop>.texts{
-    top: 120px;
-}
-.mainTop h2{
-    font-size: 24px;
-    line-height: 80px;
-}
-.mainBtm>ul>li:nth-child(1):after{
-    height: 25px;
-}
-.mainBtm>ul>li::before{
-    height: 25px;
-}
-.mainBtm>ul>li{
-    line-height: 40px;
-    font-size: 12px;
-}
 /* 컨텐츠 */
 .cntWrap{
     margin-top: 40px;

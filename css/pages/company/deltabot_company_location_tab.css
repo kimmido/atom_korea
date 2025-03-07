@@ -88,25 +88,6 @@ header>.logo{
 .mobileWrap .mnBtm>ul>li:nth-child(even).show{
     height: 240px;
 }
-/* 메인 */
-.mainTop>.image{
-    height: min(8.5rem,340px);
-}
-.mainTop>.texts{
-    top: min(4rem,160px);
-}
-.mainTop h2{
-    font-size: min(3.6em,36px);
-    line-height: min(1rem,40px);
-}
-.mainBtm>ul{
-    width: 90%;
-    max-width: 700px;
-}
-.mainBtm>ul>li{
-    line-height: min(1.5rem,60px);
-    font-size: min(1.2em,12px);
-}
 /* 컨텐츠 */
 .content{
     width: 90%;

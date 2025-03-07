@@ -1,3 +1,6 @@
+.mainWrap {
+    margin-top: var(--header-height);
+}
 main{
     text-align: center;
     position: relative;
@@ -11,6 +14,10 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     background-position:  center;
+}
+
+.mainTop>.image.product {
+    background-size: 120%;
 }
 
 #deltaRobotD2 .mainTop>.image,
@@ -28,7 +35,7 @@ main{
 #scaraST .mainTop>.image,
 #scaraMBD .mainTop>.image,
 #scaraMGD .mainTop>.image {
-background-image: url('../../../image/heading/scara.JPG');
+background-image: url('../../../image/heading/scara.jpg');
 }
 #cobotMD20 .mainTop>.image,
 #cobotMD30 .mainTop>.image,
@@ -48,19 +55,36 @@ background-image: url('../../../image/heading/vision-system.JPG');
 background-image: url('../../../image/heading/solution.jpg');
 }
 
+#location .mainTop>.image,
+#greeting .mainTop>.image{
+background-image: url('../../../image/heading/company.jpg');
+}
+
 .mainTop>.texts{
     position: absolute;
-    top: min(5rem,200px);
-    left: 0;
-    right: 0;
-    margin: auto;
+    left: min(0.6rem, 24px);
+    bottom: min(0.6rem, 24px);
+    width: 100%;
 }
+
+.mainTop.text-center >.texts{
+    top: min(5rem,200px);
+}
+
+.mainTop.text-center h2 {
+    text-align: center;
+}
+
 .mainTop h2{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
     font-size: min(4.8em,48px);
-    line-height: min(2rem,80px);
     font-weight: 600;
+    text-align: left;
     text-transform: uppercase;
     color: #fff;
+    text-shadow: -3px 4px 5px rgba(0,0,0,.5);
 }
 .mainBtm{
     position: absolute;
@@ -68,4 +92,134 @@ background-image: url('../../../image/heading/solution.jpg');
     bottom: 0;
     left: 0;
     background: rgba(51,51,51,.8);
+}
+.mainBtm>ul{
+    width: 80%;
+    max-width: 1420px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.mainBtm>ul>li:nth-child(1):after{
+    display: block;
+    content: '';
+    width: 1px;
+    height: min(1rem,40px);
+    background: rgba(255,255,255,.2);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.mainBtm>ul>li::before{
+    display: block;
+    content: '';
+    width: 1px;
+    height: min(1rem,40px);
+    background: rgba(255,255,255,.2);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+.mainBtm>ul>li{
+    width: calc(100% / 2);
+    font-size: min(1.6em,16px);
+    line-height: min(2rem,80px);
+    text-transform: uppercase;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+}
+.mainBtm>ul>li:nth-child(1){
+    color: var(--color-point);
+    font-weight: 600;
+    background-color: #fff;
+}
+
+/* ======== tablet ======== */
+@media (max-width: 1024px) {
+    .mainWrap {
+        margin-top: var(--header-height);
+    }
+    .mainTop>.image{
+        height: min(10rem,400px);
+        height: min(8.5rem,340px);
+        background-size: cover;
+    }
+
+    .mainTop.text-center>.texts{
+        top: min(3rem,150px);
+    }
+
+    .mainTop h2{
+        font-size: min(3.6em,36px);
+        line-height: min(1rem,40px);
+    }
+
+    .mainBtm>ul{
+        width: 90%;
+        max-width: 700px;
+        flex-wrap: wrap;
+    }
+    .mainBtm>ul>li{
+        line-height: min(1.5rem,60px);
+        font-size: min(1.2em,12px);
+    }
+    .mainBtm>ul>li:nth-child(4)::after{
+        display: block;
+        content: '';
+        width: 1px;
+        height: min(1rem,40px);
+        background: rgba(255,255,255,.2);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+    }
+}
+
+/* ======== mobile ======== */
+@media (max-width: 430px) {
+    .mainWrap {
+        margin-top: var(--header-height-M);
+    }
+    .mainTop>.image{
+        height: min(13rem, 260px);
+    }
+    .mainTop.text-center>.texts{
+        top: min(3.2rem,66px);
+    }
+    .mainTop h2{
+        font-size: 24px;
+    }
+    .mainBtm>ul>li{
+        line-height: 40px;
+        font-size: 12px;
+    }
+    .mainBtm>ul>li::before{
+        height: 25px;
+    }
+    .mainBtm>ul>li:nth-child(1):after{
+        height: 25px;
+    }
+    .mainBtm>ul>li:nth-child(4):after{
+        display: none;
+    }
+    .mainBtm>ul>li:nth-child(2n+3):after{
+        height: 25px;
+        display: block;
+        content: '';
+        width: 1px;
+        background: rgba(255,255,255,.2);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+    }
 }
