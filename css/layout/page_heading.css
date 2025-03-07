@@ -71,10 +71,6 @@ background-image: url('../../../image/heading/company.jpg');
     top: min(5rem,200px);
 }
 
-.mainTop.text-center h2 {
-    text-align: center;
-}
-
 .mainTop h2{
     width: 100%;
     max-width: 1440px;
@@ -86,6 +82,12 @@ background-image: url('../../../image/heading/company.jpg');
     color: #ff2b3c;
     text-shadow: -3px 4px 5px rgba(0,0,0,.5);
 }
+
+.mainTop.text-center h2 {
+    text-align: center;
+    color: #fff;
+}
+
 .mainBtm{
     position: absolute;
     width: 100%;
