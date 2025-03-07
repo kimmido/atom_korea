@@ -57,6 +57,7 @@ zoomSlider.left2 = function(){
 
 zoomSlider.right2 = function(){
     let self = this;
+    console.log(this);
 
     artGroup2.find('article>.image').css('transform','scale(1)');
     artGroup2.stop().animate({
@@ -86,4 +87,4 @@ artGroup2.swipeleft(function(){
 artGroup2.swiperight(function(){
     zoomSlider.left2();
 })
-setInterval(zoomSlider.slide2,10000);
+setInterval(() => zoomSlider.right2(),6000);
