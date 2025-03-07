@@ -134,5 +134,6 @@ $(function(){
         var video = document.getElementById('video');
         $("#video_src").attr("src",mov);
         video.load();
+        video.play();
     });
 });
