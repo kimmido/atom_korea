@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="./css/pages/main/main.css">
     <link rel="stylesheet" href="./css/pages/main/main_tab.css" media="(max-width:1024px) and (min-width:0px)">
     <link rel="stylesheet" href="./css/pages/main/main_M.css" media="(max-width:420px) and (min-width:0px)">
-    <!-- <script src="./js/jquery-3.6.0.min.js"></script> -->
     <script src="./js/jquery-1.11.1.min.js"></script>
     <script src="./js/jquery.mobile.custom.min.js"></script>
     <script src="./js/deltabot_main.js"></script>
@@ -185,13 +184,13 @@
     </div>
     <!-- 컨텐츠2 -->
     <div class="cntWrap">
-        <div class="content cnt02">
+        <div class="content cnt02 slideWrap">
             <header>
                 <h2>our products</h2>
             </header>
             <section>
-                <div class="artGroup">
-                    <article>
+                <div class="artGroup slideList">
+                    <article class="slideItem">
                         <div class="image i1"></div>
                         <div class="texts">
                             <h3>delta robot</h3>
@@ -199,7 +198,7 @@
                             <div class="btn"><a href="./pages/product/delta-robot-d2.html">더 보기 <i class="xi-plus"></i></a></div>
                         </div>
                     </article>
-                    <article>
+                    <article class="slideItem">
                         <div class="image i2"></div>
                         <div class="texts">
                             <h3>scara</h3>
@@ -207,7 +206,7 @@
                             <div class="btn"><a href="./pages/product/scara-st.html">더 보기 <i class="xi-plus"></i></a></div>
                         </div>
                     </article>
-                    <article>
+                    <article class="slideItem">
                         <div class="image i3"></div>
                         <div class="texts">
                             <h3>Cobot Palletizer</h3>
@@ -215,7 +214,7 @@
                             <div class="btn"><a href="./pages/product/cobot-md20.html">더 보기 <i class="xi-plus"></i></a></div>
                         </div>
                     </article>
-                    <article>
+                    <article class="slideItem">
                         <div class="image i4"></div>
                         <div class="texts">
                             <h3>Control System</h3>
@@ -223,7 +222,7 @@
                             <div class="btn"><a href="./pages/product/control-system.html">더 보기 <i class="xi-plus"></i></a></div>
                         </div>
                     </article>
-                    <article>
+                    <article class="slideItem">
                         <div class="image i5"></div>
                         <div class="texts">
                             <h3>Case Packer</h3>
@@ -231,7 +230,7 @@
                             <div class="btn"><a href="./pages/product/case-packer.html">더 보기 <i class="xi-plus"></i></a></div>
                         </div>
                     </article>
-                    <article>
+                    <article class="slideItem">
                         <div class="image i6"></div>
                         <div class="texts">
                             <h3>Vision System</h3>
@@ -240,7 +239,7 @@
                         </div>
                     </article>
                 </div>
-                <div class="btn">
+                <div class="slideBtn">
                     <div class="left"><i class="xi-angle-left"></i></div>
                     <div class="right"><i class="xi-angle-right"></i></div>
                 </div>
@@ -270,7 +269,7 @@
                     </div>
                     <div class="video">
                         <video id="video" controls>
-                            <source id="video_src" src="/videos/main_cnt03(1).mp4" type="video/mp4">
+                            <source id="video_src" src="/videos/main_cnt03(1).mp4" type="video/mp4" preload="metadata">
                             <strong>Your browser does not support the video tag.</strong>
                     </div>
                 </article>

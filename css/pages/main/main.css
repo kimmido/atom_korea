@@ -39,9 +39,7 @@ main article>.image.i3{
 main article>.image.i4{
     background-image: url('../../../image/main/banner4.jpg');
 }
-/* main article>.image.i5{
-    background-image: url('../../../image/main/banner4.jpg');
-} */
+
 main article>.texts{
     width: 80%;
     max-width: 1420px;
@@ -354,16 +352,17 @@ section{
 }
 .cnt02 article>.texts>.btn{
     width: calc(100% / 3.8 * 1.5);
-    padding-left: 10px;
+    margin-top: min(1.5rem,30px);
     font-size: min(1.8em,18px);
     line-height: min(1rem,40px);
-    margin-top: min(1.5rem,30px);
-    transition: all 0.3s;
+    text-align: center;
+    color: var(--color-point);
     border: 1px solid var(--color-point);
     border-radius: 20px;
-    color: var(--color-point);
+
+    transition: all 0.3s;
 }
-.cnt02>section>.btn{
+.cnt02>section>.slideBtn{
     width: calc(100% / 16 * 7);
     height: min(2rem,80px);
     position: absolute;
@@ -377,9 +376,10 @@ section{
     line-height: min(2rem,80px);
     color: #666;
 }
-.cnt02>section>.btn>div{
+.cnt02>section>.slideBtn>div{
     cursor: pointer;
 }
+
 /* 컨텐츠3 */
 .cnt03 article{
     direction: rtl;

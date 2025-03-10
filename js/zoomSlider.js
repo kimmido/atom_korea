@@ -1,12 +1,10 @@
 const zoomSlider = new Object();
 
-let artGroup2 = $('.cnt02 .artGroup');
-zoomSlider.node = artGroup2;
 
 
 zoomSlider.setOrder = function() {
-    artGroup2.find('article:last').prependTo(artGroup2);
-    artGroup2.find('article:last').prependTo(artGroup2);
+    this.node.find('.slideItem:last').prependTo(this.node);
+    this.node.find('.slideItem:last').prependTo(this.node);
 }
 
 zoomSlider.setPos = function (wd) {
@@ -20,7 +18,7 @@ zoomSlider.setPos = function (wd) {
         this.mv = 60;
     }
 
-    artGroup2.css({
+    this.node.css({
         marginLeft : -this.mvLeft+'%'
     });
 }
@@ -28,13 +26,13 @@ zoomSlider.setPos = function (wd) {
 zoomSlider.left2 = function(){
     let self = this;
 
-    artGroup2.find('article>.image').css('transform','scale(1)');
-    artGroup2.stop().animate({
+    this.node.find('.slideItem>.image').css('transform','scale(1)');
+    this.node.stop().animate({
         marginLeft : -this.mv+'%'
     },500,function(){
-        artGroup2.find('article:last').prependTo(artGroup2);
-        artGroup2.find('article:eq(2)>.image').css('transform','scale(1.35)');
-        artGroup2.css({
+        self.node.find('.slideItem:last').prependTo(self.node);
+        self.node.find('.slideItem:eq(2)>.image').css('transform','scale(1.35)');
+        self.node.css({
             marginLeft : -self.mvLeft+'%'
         });
     });
@@ -42,34 +40,37 @@ zoomSlider.left2 = function(){
 
 zoomSlider.right2 = function(){
     let self = this;
-    console.log(this);
+    console.log(this.node);
 
-    artGroup2.find('article>.image').css('transform','scale(1)');
-    artGroup2.stop().animate({
+    this.node.find('.slideItem>.image').css('transform','scale(1)');
+    this.node.stop().animate({
         marginLeft : -this.mvRight+'%'
     },300,function(){
-        artGroup2.find('article:first').appendTo(artGroup2);
-        artGroup2.find('article:eq(2)>.image').css('transform','scale(1.35)');
-        artGroup2.css({
+        self.node.find('.slideItem:first').appendTo(self.node);
+        self.node.find('.slideItem:eq(2)>.image').css('transform','scale(1.35)');
+        self.node.css({
             marginLeft : -self.mvLeft+'%'
         });
     });
 }
 
+const LIST = $('.slideWrap .slideList');
 var wd = $(window).width();
-zoomSlider.setOrder(artGroup2);
-zoomSlider.setPos(wd, artGroup2);
+zoomSlider.node = LIST;
 
-$('.cnt02 .left').click(function(){   
+zoomSlider.setOrder();
+zoomSlider.setPos(wd);
+
+$('.slideWrap .left').click(function(){   
     zoomSlider.left2();
 });
-$('.cnt02 .right').click(function(){
+$('.slideWrap .right').click(function(){
     zoomSlider.right2();
 });
-artGroup2.swipeleft(function(){
+LIST.swipeleft(function(){
     zoomSlider.right2();
 });
-artGroup2.swiperight(function(){
+LIST.swiperight(function(){
     zoomSlider.left2();
 })
-setInterval(() => zoomSlider.right2(),6000);
+setInterval(() => zoomSlider.right2(), 4000);
