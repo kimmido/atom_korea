@@ -57,7 +57,7 @@
     height: 50px;
     background-color: var(--color-point);
     border-radius: 50%;
-    background-image: url('../../../image/locationIcon.png');
+    background-image: url('../../../image/company/locationIcon.png');
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 1px 0 5px rgb(0 0 0 / 15%);

@@ -30,7 +30,7 @@
     width: calc(100% / 16 * 14);
     height: min(14rem,560px);
     margin: 0 auto;
-    background-image: url('../../../image/sub3_cnt01.jpg');
+    background-image: url('../../../image/company/sub3_cnt01.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -71,13 +71,13 @@
     background-position: center;
 }
 .cnt02 .image.i1{
-    background-image: url('../../../image/sub3_cnt02_1.png');
+    background-image: url('../../../image/company/sub3_cnt02_1.png');
 }
 .cnt02 .image.i2{
-    background-image: url('../../../image/sub3_cnt02_2.png');
+    background-image: url('../../../image/company/sub3_cnt02_2.png');
 }
 .cnt02 .image.i3{
-    background-image: url('../../../image/sub3_cnt02_3.png');
+    background-image: url('../../../image/company/sub3_cnt02_3.png');
 }
 .cnt02 .texts{
     text-align: center;
