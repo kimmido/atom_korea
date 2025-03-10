@@ -2,6 +2,7 @@
     touch-action: pan-y;
     -ms-touch-action: pan-y;
 }
+
 /* 메인 슬라이드 */
 .mainWrap{
     margin-top: var(--header-height);
@@ -41,11 +42,8 @@ main article>.image.i4{
 }
 
 main article>.texts{
-    width: 80%;
-    max-width: 1420px;
     position: absolute;
     top: min(8rem,320px);
-    margin: 0 auto;
     left: max(calc((100vw - 1420px) / 2),calc((100vw - 80%) / 2));
     color: #fff;
     text-shadow: 2px 2px 3px rgb(0 0 0 / 50%);
@@ -66,7 +64,7 @@ main article>.texts>h2.active{
 }
 main article>.texts>p{
     width: calc(100% / 16 * 7.5);
-    font-size: min(2.4em,24px);
+    font-size: var(--font-responsive-24to17);
     line-height: min(1rem,40px);
     margin-top: 60px;
     opacity: 0%;
@@ -99,52 +97,10 @@ main article>.texts>p.active{
     background-color: var(--color-point);
     width: 30px;
 }
-/* .mainWrap>.scroll{
-    position: absolute;
-    bottom: 15px;
-    right: 0;
-    left: 0;
-    margin: auto;
-}
-.mainWrap .mouse{
-    width: 25px;
-    height: 40px;
-    border: 2px solid #fff;
-    border-radius: 20px;
-    margin: 0 auto;
-    position: relative;
-    box-shadow: 2px 2px 5px rgb(0 0 0 / 40%);
-    cursor: pointer;
-}
-.mainWrap .wheel{
-    width: 3px;
-    height: 6px;
-    border-radius: 10px;
-    background-color: #fff;
-    margin: 0 auto;
-    position: absolute;
-    top: 5px;
-    left: 0;
-    right: 0;
-    box-shadow: 1px 2px 5px rgb(0 0 0 / 40%);
-}
-.mainWrap .arrow{
-    width: 8px;
-    height: 10px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url('../../../image/arrow.png');
-    margin: 5px auto 0;
-} */
+
 /* 컨텐츠 공통*/
 .cntWrap{
     margin-top: min(3rem,120px);
-}
-.content{
-    width: 80%;
-    max-width: 1420px;
-    margin: 0 auto;
 }
 .content>header>h2{
     font-size: min(5.2em,52px);
@@ -177,19 +133,17 @@ section{
     background-position: center;
     background-size: cover;
 }
+
 /* 컨텐츠1 */
-.cnt01 .title{
+.cnt01 .title {
     padding-bottom: min(0.5rem,20px);
 }
-.cnt01 .image{
+.cnt01 .image {
     width: calc(460 / 1420 * 100%);
-    /* height: min(19.5rem,780px); */
-    background-color: #ccc;
     background-image: url('/image/main/solution_foods.jpg');
-    /* box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.3); */
     transition: all 0.3s;
 }
-.cnt01 .grid{
+.cnt01 .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1px;
@@ -246,7 +200,7 @@ section{
 
 .cnt01 .grid li .tit {
     margin-top: min(0.4rem, 12px);
-    font-size: min(2.8em,24px);
+    font-size: var(--font-responsive-24to17);
     color: var(--color-point);
 }
 
@@ -297,9 +251,9 @@ section{
 } */
 .cnt02 section>.artGroup>article .image{
     width: 100%;
-    height: min(8.5rem,340px);
+    height: min(10.5rem,340px);
     background-color: #f5f5f5;
-    background-size: 85%;
+    background-size: 80%;
     border-radius: 50%;
     transition: all 0.5s;
     /* clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%); */
@@ -342,25 +296,25 @@ section{
     text-transform: capitalize;
 }
 .cnt02 article>.texts>p{
-    font-size: min(1.8em,18px);
-    line-height: min(0.75rem,30px);
+    font-size: min(2.7em, var(--font-size-md));
+    line-height: 1.4;
     word-break: keep-all;
 }
-.cnt02 article>.texts>.btn:hover{
-    color: #fff;
-    background-color: var(--color-point);
-}
 .cnt02 article>.texts>.btn{
-    width: calc(100% / 3.8 * 1.5);
+    width: 40%;
     margin-top: min(1.5rem,30px);
-    font-size: min(1.8em,18px);
-    line-height: min(1rem,40px);
+    font-size: min(2.7em, var(--font-size-md));
+    line-height: min(5.4em,calc(var(--font-size-md) * 2.2));
     text-align: center;
     color: var(--color-point);
     border: 1px solid var(--color-point);
     border-radius: 20px;
 
     transition: all 0.3s;
+}
+.cnt02 article>.texts>.btn:hover{
+    color: #fff;
+    background-color: var(--color-point);
 }
 .cnt02>section>.slideBtn{
     width: calc(100% / 16 * 7);

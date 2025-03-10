@@ -10,13 +10,24 @@ html문서의 스타일을 만들기 쉽게 하기 위해 스타일을 사용 �
 
 	--header-height: min(2rem, 80px);
 	--header-height-M: 66px;
+
+	--font-size-xs: 13px;
+	--font-size-sm: 15px;
+	--font-size-md: 17px;
+
+	--font-responsive-24to17: min(0.73rem,24px);
+
 }
 
+@font-face {
+    font-family: NanumGothic;
+    src: url('./fonts/NanumGothic-Regular.ttf');
+}
 /*
 b요소제거
 main요소, hr요소 추가
 */
-html, body, div, span, applet, object, iframe,
+*, html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -45,6 +56,17 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
+
+html{
+    font-size: 2.2vw;
+    font-family: NanumGothic;
+}
+body{
+    font-size: 0.5vw;
+    position: relative;
+}
+
+
 ol, ul {
 	list-style: none;
 }
@@ -61,6 +83,9 @@ table {
 	border-spacing: 0;
 }
 a{
+    display: block;
+	width: 100%;
+    height: 100%;
     color: inherit;
     text-decoration: none;
 }
@@ -85,4 +110,16 @@ img {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 10px;
+}
+
+
+@media (max-width: 1024px) {
+    html{
+        font-size: 5vw;
+    }
+    body{
+        position: relative;
+        font-size: 1.2vw;
+        font-family: xeicon;
+    }
 }

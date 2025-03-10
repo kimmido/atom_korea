@@ -3,8 +3,6 @@ main article>.image{
     height: min(21rem,840px);
 }
 main article>.texts{
-    width: 90%;
-    max-width: 700px;
     left: max(calc((100vw - 700px) / 2),calc((100vw - 90%) / 2));
 }
 main article>.texts>h2{
@@ -23,10 +21,6 @@ main article>.texts>p{
 }
 
 /* 컨텐츠 */
-.content{
-    width: 90%;
-    max-width: 700px;
-}
 .content>header>h2{
     font-size: min(4.2em,42px);
     line-height: min(1.5rem,60px);
@@ -42,32 +36,36 @@ section{
 }
 
 /* 컨텐츠1 */
-.cnt01 article>.image{
+.cnt01 .image{
     width: 100%;
-    height: min(12rem,480px);
+    height: min(8rem, 320px);
 }
-.cnt01 article>.texts{
+
+.cnt01 .grid {
     width: 100%;
 }
-.cnt01 .texts .tit>h3,.cnt01 .texts .tit>i{
-    font-size: min(2.4em,24px);
+
+.cnt01 .grid li {
+    height: min(6rem, 260px);
 }
-.cnt01 .texts .txt>.btn>a{
-    width: calc(100% / 8 * 0.5);
+
+.cnt01 .grid li .tit {
+    margin-top: min(0.4rem, 12px);
+    font-size: min(2.8em, 17px);
+    color: var(--color-point);
 }
-.cnt01 .texts .txt>p{
-    font-size: min(1.6em,16px);
+
+.cnt01 .grid>li .btn a {
+    padding: 0.1rem 0 0.22rem;
 }
+
+
 /* 컨텐츠2 */
-.cnt02 section>.artGroup{
-    /* width: calc(100% / 8 * 14); */
-}
 .cnt02 section>.artGroup>article{
-    /* width: calc(100% / 14 * 1.95); */
     padding-top: min(1rem,40px);
 }
 .cnt02 section>.artGroup>article .image{
-    height: min(4.25rem,170px);
+    height: min(4.7rem, 239px);
 }
 .cnt02 article>.texts{
     margin-top: min(1rem,40px);
@@ -77,19 +75,19 @@ section{
     line-height: min(1rem,40px);
 }
 .cnt02 article>.texts>p{
-    font-size: min(1.6em,16px);
-    line-height: min(0.75rem,30px);
+    font-size: min(0.6rem, var(--font-size-sm));
     margin-top: min(0.5rem,20px);
     word-break: break-all;
 }
 .cnt02 article>.texts>.btn{
-    width: calc(100% / 2 * 1.2);
-    font-size: min(1.6em,16px);
-    line-height: min(0.75rem,30px);
+    width: 54%;
+    min-width: 84px;
+    font-size: min(0.6rem, var(--font-size-xs));
+    line-height: min(1.2rem, 30px);
     padding-left: 0px;
     text-align: center;
 }
-.cnt02>section>.btn{
+.cnt02>section>.slideBtn{
     width: calc(100% / 8 * 3.7);
     height: min(1rem,40px);
     top: min(3rem,120px);
