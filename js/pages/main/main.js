@@ -111,6 +111,9 @@ $(function(){
     });
 
     // 컨텐츠1
+    // ${'.cnt01 .grid'}
+
+
     var aco = $('.cnt01 ul>li');
     aco.click(function(){
         var pic = $(this).attr('data-pic');
