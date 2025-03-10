@@ -25,6 +25,21 @@ const produtPages = {
             label: "D3WZ series",
             path: "./delta-robot-d3wz.html"
         },
+        {
+            id: "deltaRobotD3WC",
+            label: "D3WC series",
+            path: "./delta-robot-d3wc.html"
+        },
+        {
+            id: "deltaRobotD3P",
+            label: "D3P series",
+            path: "./delta-robot-d3p.html"
+        },
+        {
+            id: "deltaRobotD3PB",
+            label: "D3PB series",
+            path: "./delta-robot-d3pb.html"
+        },
     ]
 };
 
