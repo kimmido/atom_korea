@@ -1,4 +1,4 @@
-import { iconAlt } from "../../data/icon-alt";
+import { iconAlt } from "../../data/icon-alt.js";
 
 $(function(){
     var artGroup = $('main .artGroup');
@@ -133,26 +133,26 @@ $(function(){
     })
 
     var aco = $('.cnt01 ul>li');
-    let img = $('.cnt01 article>.image');
+    let acoImg = $('.cnt01 article>.image');
 
     aco.on('mouseenter', function() {
-        pic = $(this).attr('data-pic');
-        img.css("background-image",pic);
-        aco.removeClass('on');
-        $(this).addClass('on');
+        chageImgAndClass($(this), aco, acoImg);
     })
 
     setInterval(function() {
-        let current = aco.filter('.on');
         let next = current.next('li'); 
         if (next.length === 0) {          
             next = aco.first(); 
         }
-        pic = next.attr('data-pic');
-        img.css("background-image",pic);
-        current.removeClass('on');
-        next.addClass('on');
+        chageImgAndClass(next, aco, acoImg);
     }, 4000);
+    
+    function chageImgAndClass (targetEl, removeEl, imgEl) {
+        let pic = targetEl.attr('data-pic');
+        imgEl.css("background-image",pic);
+        removeEl.removeClass('on');
+        targetEl.addClass('on');
+    }
 
   
 
