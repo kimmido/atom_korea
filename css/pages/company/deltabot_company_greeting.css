@@ -46,10 +46,10 @@
 }
 .cnt01 .texts>p{
     font-size: min(1.8em,18px);
-    line-height: min(1.5rem,60px);
+    line-height: 2;
     width: calc(100% / 16 * 12.5);
     margin: 0 auto;
-    margin-top: min(3rem,120px);
+    margin-top: min(1.4rem,40px);
     color: #333;
 }
 /* 컨텐츠2 */

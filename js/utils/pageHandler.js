@@ -19,5 +19,5 @@ import { printTabMenu } from "../layout/printTabMenu.js";
     if(paths.includes("solution")) {
         printTabMenu(solutionPages, ID);
         printSolutionShort(solutionData[ID]);
-    }
+    }  
 })();
