@@ -1,6 +1,7 @@
 import { solutionData } from "/js/data/solutionData.js";
 import { printSolutionShort } from "/js/pages/solution/printSolutionShort.js";
 import { printTabMenu } from "../layout/printTabMenu.js";
+import { pageHeading } from "../layout/page-heading.js";
 
 (function () {
     const ID = document.querySelector("body").getAttribute("id");
@@ -12,6 +13,7 @@ import { printTabMenu } from "../layout/printTabMenu.js";
                 printTabMenu(produtPages[key], ID);
             }
         }
+        pageHeading(ID);
         printArtTop(product[ID]);
         printArtBtm(product[ID]);
     }

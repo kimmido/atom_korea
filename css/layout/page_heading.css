@@ -20,37 +20,6 @@ main{
     background-size: 120%;
 }
 
-#deltaRobotD2 .mainTop>.image,
-#deltaRobotDD2 .mainTop>.image,
-#deltaRobotD3W .mainTop>.image,
-#deltaRobotD3WB .mainTop>.image,
-#deltaRobotD3WC .mainTop>.image,
-#deltaRobotD3P .mainTop>.image,
-#deltaRobotD3PB .mainTop>.image,
-#deltaRobotD3WZ .mainTop>.image,
-#deltaRobotD3WZ .mainTop>.image,
-#deltaRobotD2 .mainTop>.image {
-    background-image: url('../../../image/heading/delta-robot.jpg');
-}
-#scaraST .mainTop>.image,
-#scaraMBD .mainTop>.image,
-#scaraMGD .mainTop>.image {
-background-image: url('../../../image/heading/scara.jpg');
-}
-#cobotMD20 .mainTop>.image,
-#cobotMD30 .mainTop>.image,
-#cobotMD40 .mainTop>.image{
-background-image: url('../../../image/heading/cobot.jpg');
-}
-#controlSystem .mainTop>.image{
-background-image: url('../../../image/heading/control-system.jpg');
-}
-#casePacker .mainTop>.image{
-background-image: url('../../../image/heading/case-packer.jpg');
-}
-#visionSystem .mainTop>.image{
-background-image: url('../../../image/heading/vision-system.jpg');
-}
 #foods .mainTop>.image{
 background-image: url('../../../image/heading/solution.jpg');
 }
