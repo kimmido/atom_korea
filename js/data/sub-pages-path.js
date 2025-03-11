@@ -46,49 +46,49 @@ const produtPages = {
 const solutionPages = [
     {
         id: "foods",
-        label: "solution",
+        label: "Foods",
         path: "/pages/solution/foods.html",
         icon: "foods_red.png"
     },
     {
         id: "personalCare",
-        label: "solution",
+        label: "Personal Care",
         path: "/pages/solution/foods.html",
         icon: "personal-care_red.png"
     },
     {
         id: "pharmaceuticals",
-        label: "solution",
+        label: "Pharmaceuticals",
         path: "/pages/solution/foods.html",
         icon: "pharmaceuticals_red.png"
     },
     {
         id: "dairy",
-        label: "solution",
-        path: "/pages/solution/foods.html",
+        label: "Dairy",
+        path: "/pages/solution/fooDs.html",
         icon: "dairy_red.png"
     },
     {
         id: "automotive",
-        label: "solution",
+        label: "Automotive",
         path: "/pages/solution/foods.html",
         icon: "automotive_red.png"
     },
     {
         id: "newEnergy",
-        label: "solution",
+        label: "New Energy",
         path: "/pages/solution/foods.html",
         icon: "new-energy_red.png"
     },
     {
         id: "pcb",
-        label: "solution",
+        label: "PCB",
         path: "/pages/solution/foods.html",
         icon: "pcb_red.png"
     },
     {
         id: "3c",
-        label: "solution",
+        label: "3C",
         path: "/pages/solution/foods.html",
         icon: "3c_red.png"
     },

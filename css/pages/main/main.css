@@ -222,7 +222,7 @@ section{
     background-color: var(--color-point);
     padding: 0.2rem 0 0.28rem;
     width: 100%;
-    font-size: 13px;
+    font-size: var(--font-size-sm);
     color: #fff;
     border-radius: 1000px;
 }

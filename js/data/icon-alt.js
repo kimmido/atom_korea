@@ -1,5 +1,12 @@
 const iconAlt = {
     foods: "음식 아이콘",
+    dairy: "우유병 아이콘",
+    personalCare: "퍼스널케어 아이콘",
+    pharmaceuticals: "알약 아이콘",
+    newEnergy: "에너지 아이콘",
+    automotive: "자동차 아이콘",
+    pcb: "pcb 아이콘",
+    '3c': "3c 아이콘",
     timer: "타이머 아이콘",
     labors: "노동자 아이콘",
     chart: "상승차트 아이콘",

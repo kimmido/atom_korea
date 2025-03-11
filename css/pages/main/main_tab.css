@@ -36,7 +36,8 @@ section{
 }
 
 /* 컨텐츠1 */
-.cnt01 .image{
+.cnt01 .image {
+    display: none;
     width: 100%;
     height: min(8rem, 320px);
 }
@@ -57,6 +58,7 @@ section{
 
 .cnt01 .grid>li .btn a {
     padding: 0.1rem 0 0.22rem;
+    font-size: var(--font-size-xs);
 }
 
 

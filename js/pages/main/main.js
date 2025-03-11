@@ -1,3 +1,5 @@
+import { iconAlt } from "../../data/icon-alt";
+
 $(function(){
     var artGroup = $('main .artGroup');
     var pagination = $('.mainWrap>ul>li');
@@ -110,6 +112,7 @@ $(function(){
         console.log(tp)
     });
 
+
     // 컨텐츠1
     let list = $('.cnt01 .grid');
 
@@ -120,7 +123,7 @@ $(function(){
                 <div class="item__inner">
                 
                     <img class="icon" src="/image/icon/${val.icon}" alt="${iconAlt[val.id]}">
-                    <h3 class="tit">${val.id}</h3>
+                    <h3 class="tit">${val.label}</h3>
                     <div class="btn">
                         <a href="${val.path}">more</a>
                     </div>
@@ -129,19 +132,27 @@ $(function(){
         `);
     })
 
- 
-
     var aco = $('.cnt01 ul>li');
-    aco.click(function(){
-        var pic = $(this).attr('data-pic');
+    let img = $('.cnt01 article>.image');
+
+    aco.on('mouseenter', function() {
+        pic = $(this).attr('data-pic');
+        img.css("background-image",pic);
         aco.removeClass('on');
         $(this).addClass('on');
-        aco.find('.tit>i').removeClass('xi-plus');
-        aco.find('.tit>i').addClass('xi-minus');
-        $(this).find('.tit>i').removeClass('xi-minus');
-        $(this).find('.tit>i').addClass('xi-plus');
-        $('.cnt01 article>.image').css("background-image",pic);
-    });
+    })
+
+    setInterval(function() {
+        let current = aco.filter('.on');
+        let next = current.next('li'); 
+        if (next.length === 0) {          
+            next = aco.first(); 
+        }
+        pic = next.attr('data-pic');
+        img.css("background-image",pic);
+        current.removeClass('on');
+        next.addClass('on');
+    }, 4000);
 
   
 
