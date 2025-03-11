@@ -1,4 +1,4 @@
-const solutionData = {
+export const solutionData = {
     foods: [
         {
             title: "Powder Bags Case Packing",

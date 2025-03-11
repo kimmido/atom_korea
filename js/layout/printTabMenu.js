@@ -1,4 +1,4 @@
-function printTabMenu(tabs, ID) {
+export function printTabMenu(tabs, ID) {
     if(!tabs[0]) return;
 
     const tabBox = document.querySelector('.tab');

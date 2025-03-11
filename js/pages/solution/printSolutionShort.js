@@ -1,4 +1,6 @@
-function printSolutionShort(dataArr) {
+import { iconAlt } from "../../data/icon-alt.js";
+
+export function printSolutionShort(dataArr) {
     const artBtm = document.querySelector(".artBtm");
     let shortHtml = "";
     

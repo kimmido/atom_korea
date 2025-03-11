@@ -1,12 +1,15 @@
+import { solutionData } from "/js/data/solutionData.js";
+import { printSolutionShort } from "/js/pages/solution/printSolutionShort.js";
+import { printTabMenu } from "../layout/printTabMenu.js";
+
 (function () {
     const ID = document.querySelector("body").getAttribute("id");
     const paths = window.location.pathname.split("/");
-    let tabs = [];
 
     if(paths.includes("product")) {
         for(const key in produtPages) {
             if(ID.includes(key)) {
-                tabs = produtPages[key];
+                printTabMenu(produtPages[key], ID);
             }
         }
         printArtTop(product[ID]);
@@ -14,9 +17,7 @@
     }
 
     if(paths.includes("solution")) {
-        tabs = solutionPages;
+        printTabMenu(solutionPages, ID);
         printSolutionShort(solutionData[ID]);
     }
-
-    printTabMenu(tabs, ID);
 })();

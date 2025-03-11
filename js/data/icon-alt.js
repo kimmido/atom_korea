@@ -1,4 +1,4 @@
-const iconAlt = {
+export const iconAlt = {
     foods: "음식 아이콘",
     dairy: "우유병 아이콘",
     personalCare: "퍼스널케어 아이콘",
