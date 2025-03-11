@@ -50,6 +50,19 @@ section{
     height: min(6rem, 260px);
 }
 
+.cnt01 .grid>li .circle {
+    left: 0;
+    top: -20%;
+    width: 100%;
+    height: 36%;
+}
+.cnt01 .grid>li .btn {
+    opacity: 1;
+}
+.cnt01 .grid>li .item__inner {
+    transform: translateY(0);
+}
+
 .cnt01 .grid li .tit {
     margin-top: min(0.4rem, 12px);
     font-size: min(2.8em, 17px);
