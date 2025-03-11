@@ -1,14 +1,12 @@
 const zoomSlider = new Object();
 
-
-
 zoomSlider.setOrder = function() {
     this.node.find('.slideItem:last').prependTo(this.node);
     this.node.find('.slideItem:last').prependTo(this.node);
 }
 
-zoomSlider.setPos = function (wd) {
-    if(wd > 420){
+zoomSlider.setPos = function (vw, {wd_m}) {
+    if(vw > wd_m){
         this.mvLeft = 38;
         this.mvRight = 76;
         this.mv = 0;
@@ -58,7 +56,7 @@ var wd = $(window).width();
 zoomSlider.node = LIST;
 
 zoomSlider.setOrder();
-zoomSlider.setPos(wd);
+// zoomSlider.setPos(wd);
 
 $('.slideWrap .left').click(function(){   
     zoomSlider.left2();

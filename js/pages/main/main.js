@@ -4,7 +4,7 @@ $(function(){
     var artGroup = $('main .artGroup');
     var pagination = $('.mainWrap>ul>li');
     var wheel = $('.wheel');
-
+    let ind = 0;
 
     // 메인 슬라이드
     artGroup.find('article:last').prependTo(artGroup);
@@ -30,7 +30,7 @@ $(function(){
                 marginLeft : '-100%'
             });
         });
-       ind = artGroup.find('article:eq(2)').attr('data-num');
+        ind = artGroup.find('article:eq(2)').attr('data-num');
         pagination.removeClass('show');
         pagination.eq(ind).addClass('show');
     }
@@ -131,28 +131,6 @@ $(function(){
             </li>
         `);
     })
-
-    var aco = $('.cnt01 ul>li');
-    let acoImg = $('.cnt01 article>.image');
-
-    aco.on('mouseenter', function() {
-        chageImgAndClass($(this), aco, acoImg);
-    })
-
-    setInterval(function() {
-        let next = current.next('li'); 
-        if (next.length === 0) {          
-            next = aco.first(); 
-        }
-        chageImgAndClass(next, aco, acoImg);
-    }, 4000);
-    
-    function chageImgAndClass (targetEl, removeEl, imgEl) {
-        let pic = targetEl.attr('data-pic');
-        imgEl.css("background-image",pic);
-        removeEl.removeClass('on');
-        targetEl.addClass('on');
-    }
 
   
 
