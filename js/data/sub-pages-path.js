@@ -47,49 +47,49 @@ const solutionPages = [
     {
         id: "foods",
         label: "solution",
-        path: "./foods.html",
-        icon: "foods"
+        path: "/pages/solution/foods.html",
+        icon: "foods_red.png"
     },
     {
         id: "personalCare",
         label: "solution",
-        path: "./foods.html",
-        icon: "personal-care"
+        path: "/pages/solution/foods.html",
+        icon: "personal-care_red.png"
     },
     {
         id: "pharmaceuticals",
         label: "solution",
-        path: "./foods.html",
-        icon: "pharmaceuticals"
+        path: "/pages/solution/foods.html",
+        icon: "pharmaceuticals_red.png"
     },
     {
         id: "dairy",
         label: "solution",
-        path: "./foods.html",
-        icon: "dairy"
+        path: "/pages/solution/foods.html",
+        icon: "dairy_red.png"
     },
     {
         id: "automotive",
         label: "solution",
-        path: "./foods.html",
-        icon: "automotive"
+        path: "/pages/solution/foods.html",
+        icon: "automotive_red.png"
     },
     {
         id: "newEnergy",
         label: "solution",
-        path: "./foods.html",
-        icon: "new-energy"
+        path: "/pages/solution/foods.html",
+        icon: "new-energy_red.png"
     },
     {
         id: "pcb",
         label: "solution",
-        path: "./foods.html",
-        icon: "pcb"
+        path: "/pages/solution/foods.html",
+        icon: "pcb_red.png"
     },
     {
         id: "3c",
         label: "solution",
-        path: "./foods.html",
-        icon: "ccc"
+        path: "/pages/solution/foods.html",
+        icon: "3c_red.png"
     },
 ];

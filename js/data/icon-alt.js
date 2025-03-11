@@ -1,4 +1,5 @@
 const iconAlt = {
+    foods: "음식 아이콘",
     timer: "타이머 아이콘",
     labors: "노동자 아이콘",
     chart: "상승차트 아이콘",

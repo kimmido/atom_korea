@@ -10,8 +10,14 @@ function printTabMenu(tabs, ID) {
 
     tabs.forEach(tab => {
         tabItem += `
-            <li class="${tab.id == ID? "on": ""} ${tab.icon? tab.icon : ""}" >
-                <a href=${tab.path}>${tab.label}</a>
+            <li class="${tab.id == ID? "on": ""}" >
+                <a href=${tab.path}>
+                    ${tab.icon? 
+                        `<img src="/image/icon/${tab.icon}">` : 
+                        ""
+                    }
+                    <span>${tab.label}</span>
+                </a>
             </li>
         `;
     })

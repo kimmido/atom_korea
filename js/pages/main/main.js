@@ -1,6 +1,6 @@
 $(function(){
     var artGroup = $('main .artGroup');
-    var li = $('.mainWrap>ul>li');
+    var pagination = $('.mainWrap>ul>li');
     var wheel = $('.wheel');
 
 
@@ -29,8 +29,8 @@ $(function(){
             });
         });
        ind = artGroup.find('article:eq(2)').attr('data-num');
-        li.removeClass('show');
-        li.eq(ind).addClass('show');
+        pagination.removeClass('show');
+        pagination.eq(ind).addClass('show');
     }
     function left(){
         artGroup.animate({
@@ -45,8 +45,8 @@ $(function(){
             $('main article:eq(1)').find('.texts>h2').addClass('active');
             $('main article:eq(1)').find('.texts>p').addClass('active');
             ind = artGroup.find('article:eq(1)').attr('data-num');
-            li.removeClass('show');
-            li.eq(ind).addClass('show');
+            pagination.removeClass('show');
+            pagination.eq(ind).addClass('show');
         });
     }
     function right(){
@@ -62,8 +62,8 @@ $(function(){
             $('main article:eq(1)').find('.texts>h2').addClass('active');
             $('main article:eq(1)').find('.texts>p').addClass('active');
             ind = artGroup.find('article:eq(1)').attr('data-num');
-            li.removeClass('show');
-            li.eq(ind).addClass('show');
+            pagination.removeClass('show');
+            pagination.eq(ind).addClass('show');
         });
     }
     artGroup.swipeleft(function(){
@@ -72,7 +72,7 @@ $(function(){
     artGroup.swiperight(function(){
         left();
     })
-    li.click(function(){
+    pagination.click(function(){
         var now = $(this).index();
         clearInterval(slide);
         artGroup.stop(true);
@@ -111,8 +111,25 @@ $(function(){
     });
 
     // 컨텐츠1
-    // ${'.cnt01 .grid'}
+    let list = $('.cnt01 .grid');
 
+    $.each(solutionPages, function(idx, val) {
+        list.append(`
+            <li ${idx == 0? "class=on" : ""} data-pic="url('/image/main/solution_${val.id}.jpg')">
+                <span class="circle"></span>
+                <div class="item__inner">
+                
+                    <img class="icon" src="/image/icon/${val.icon}" alt="${iconAlt[val.id]}">
+                    <h3 class="tit">${val.id}</h3>
+                    <div class="btn">
+                        <a href="${val.path}">more</a>
+                    </div>
+                </div>
+            </li>
+        `);
+    })
+
+ 
 
     var aco = $('.cnt01 ul>li');
     aco.click(function(){

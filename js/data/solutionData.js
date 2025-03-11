@@ -173,5 +173,48 @@ const solutionData = {
                 }
             ]
         }
+    ],
+    foods: [
+        {
+            title: "Powder Bags Case Packing",
+            text: "충전 기계에서 배출된 후, 포장된 분말은 산업용 카메라로 전달됩니다. 시각 시스템은 들어오는 재료를 찾고, 식별하고, 감지하고, 로봇은 고정된 지점에서 추적하고 집어서 상자가 가득 찰 때까지 상자에 넣습니다. 자동화된 프로세스가 완료됩니다.",
+            videoSrc: "https://www.youtube.com/embed/EBWNHIxgjiA?si=ySAXJb6rX3gWKGBH",
+            infos: [
+                {
+                    title: "Speed 110bags/minute/two sets",
+                    iconName: "timer",
+                },
+                {
+                    title: "Each robot saves two labors",
+                    iconName: "labors",
+                },
+                {
+                    title: "Efficiency increased 120%",
+                    iconName: "chart",
+                },
+                {
+                    title: "ROI 11 Months",
+                    iconName: "hourglass",
+                },
+            ],
+            solutions: [
+                {
+                    title: "Packaging machine",
+                    iconName: "machine",
+                },
+                {
+                    title: "Vision System",
+                    iconName: "position",
+                },
+                {
+                    title: "Robot picking",
+                    iconName: "robot_picking",
+                },
+                {
+                    title: "Case loading",
+                    iconName: "packing",
+                },
+            ]
+        }
     ]
 }

@@ -40,7 +40,6 @@ zoomSlider.left2 = function(){
 
 zoomSlider.right2 = function(){
     let self = this;
-    console.log(this.node);
 
     this.node.find('.slideItem>.image').css('transform','scale(1)');
     this.node.stop().animate({

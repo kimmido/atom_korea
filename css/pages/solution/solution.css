@@ -42,18 +42,7 @@
 .content>header li.on::after {
     opacity: 1;
 }
-.content>header li a {
-    padding: 0 0.3rem 0.9rem;
-    height: min(5rem, 168px);
-    align-content: end;
-    background-repeat: no-repeat;
-    background-position: center 30%;
-    background-size: 30%;
 
-    -webkit-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s;
-}
 .content>header li:hover a,
 .content>header li.on a {
     color: #fff;
@@ -61,62 +50,21 @@
     background-color: var(--color-point);
 }
 
-.content>header li.foods a {
-    background-image: url("/image//icon/foods_red.png");    
-}
-.content>header li.personal-care a {
-    background-image: url("/image//icon/personal-care_red.png");    
-}
-.content>header li.pharmaceuticals a {
-    background-image: url("/image//icon/pharmaceuticals_red.png");    
-}
-.content>header li.dairy a {
-    background-image: url("/image//icon/dairy_red.png");    
-}
-.content>header li.automotive a {
-    background-image: url("/image//icon/automotive_red.png");    
-}
-.content>header li.new-energy a {
-    background-image: url("/image//icon/new-energy_red.png");    
-}
-.content>header li.pcb a {
-    background-image: url("/image//icon/pcb_red.png");    
-}
-.content>header li.ccc a {
-    background-image: url("/image//icon/ccc_red.png");    
+.content>header li a {
+    display: flex;
+    gap: 0.2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: min(5rem, 168px);
+
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
 }
 
-.content>header li.foods:hover a,
-.content>header li.foods.on a {
-    background-image: url("/image//icon/foods_white.png");    
-}
-.content>header li.personal-care:hover a,
-.content>header li.personal-care.on a {
-    background-image: url("/image//icon/personal-care_white.png");    
-}
-.content>header li.pharmaceuticals:hover a,
-.content>header li.pharmaceuticals.on a {
-    background-image: url("/image//icon/pharmaceuticals_white.png");    
-}
-.content>header li.dairy:hover a,
-.content>header li.dairy.on a {
-    background-image: url("/image//icon/dairy_white.png");    
-}
-.content>header li.automotive:hover a,
-.content>header li.automotive.on a {
-    background-image: url("/image//icon/automotive_white.png");    
-}
-.content>header li.new-energy:hover a,
-.content>header li.new-energy.on a {
-    background-image: url("/image//icon/new-energy_white.png");    
-}
-.content>header li.pcb:hover a,
-.content>header li.pcb.on a {
-    background-image: url("/image//icon/pcb_white.png");    
-}
-.content>header li.ccc:hover a,
-.content>header li.ccc.on a {
-    background-image: url("/image//icon/ccc_white.png");    
+.content>header li a img {
+    width: 30%;
 }
 
 /* artBtm */
