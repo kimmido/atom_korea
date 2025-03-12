@@ -277,10 +277,7 @@ section{
     background-image: url('../../../image/main/product_vision.png');
 }
 .cnt02 section>.artGroup>article:nth-child(3) .image{
-    /* height: min(11.25rem,450px);
-    width: 130%; */
     transform: scale(1.35);
-    /* transform-origin: 50% 100%; */
     transition: all 0.5s;
 }
 .cnt02 article>.texts{
@@ -294,7 +291,7 @@ section{
 }
 .cnt02 article>.texts>p{
     font-size: min(2.7em, var(--font-size-md));
-    line-height: 1.4;
+    line-height: 1.5;
     word-break: keep-all;
 }
 .cnt02 article>.texts>.btn{

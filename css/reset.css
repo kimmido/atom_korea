@@ -8,7 +8,7 @@ html문서의 스타일을 만들기 쉽게 하기 위해 스타일을 사용 �
 	--color-point: #FF0101;
 	--color-point: #d00f1f;
 
-	--header-height: min(2rem, 80px);
+	--header-height: min(2.8rem, 80px);
 	--header-height-M: 66px;
 
 	--font-size-xs: 13px;
@@ -16,6 +16,7 @@ html문서의 스타일을 만들기 쉽게 하기 위해 스타일을 사용 �
 	--font-size-md: 17px;
 
 	--font-responsive-24to17: min(0.73rem,24px);
+	--font-responsive-17to13: min(0.6rem,17px);
 
 }
 

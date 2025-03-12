@@ -33,7 +33,7 @@ background-image: url('../../../image/heading/company.jpg');
     position: absolute;
     left: min(0.6rem, 24px);
     bottom: min(0.6rem, 24px);
-    width: 100%;
+    /* width: 100%; */
 }
 
 .mainTop.text-center >.texts{
