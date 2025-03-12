@@ -8,13 +8,13 @@ const resonsive = {
 
 document.addEventListener("DOMContentLoaded", function() {
     let vw = window.innerWidth;
-    zoomSlider.setPos(vw, resonsive);
+    zoomSlider?.setPos?.(vw, resonsive);
     resizeHandlers.forEach(fn => fn(vw, resonsive));
 });
 
 window.addEventListener("resize", debounce(() => {
     let vw = window.innerWidth;
-    zoomSlider.setPos(vw, resonsive);
+    zoomSlider?.setPos?.(vw, resonsive);
     resizeHandlers.forEach(fn => fn(vw, resonsive));
 }, 300)); // 300ms 동안 변화가 없으면 실행
 

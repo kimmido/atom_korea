@@ -1,5 +1,11 @@
+let swapInterval = null;
+
 export function imageSwap(vw, {wd_tab}) {
-    if(vw <= wd_tab ) return;
+    if (swapInterval) {
+        clearInterval(swapInterval);
+        swapInterval = null;
+    }
+    if (vw <= wd_tab) return;
 
     let aco = $('.cnt01 ul>li');
     let acoImg = $('.cnt01 article>.image');
@@ -8,14 +14,14 @@ export function imageSwap(vw, {wd_tab}) {
         chageImgAndClass($(this), aco, acoImg);
     })
 
-    // let interval = setInterval(function() {
-    //     let current = aco.filter('.on');
-    //     let next = current.next('li'); 
-    //     if (next.length === 0) {          
-    //         next = aco.first(); 
-    //     }
-    //     chageImgAndClass(next, current, acoImg);
-    // }, 4000);
+    swapInterval = setInterval(function() {
+        let current = aco.filter('.on');
+        let next = current.next('li'); 
+        if (next.length === 0) {          
+            next = aco.first(); 
+        }
+        chageImgAndClass(next, current, acoImg);
+    }, 4000);
     
     function chageImgAndClass (targetEl, removeEl, imgEl) {
         let pic = targetEl.attr('data-pic');
