@@ -123,7 +123,7 @@ $(function(){
                 <div class="item__inner">
                 
                     <img class="icon" src="/image/icon/${val.icon}" alt="${iconAlt[val.id]}">
-                    <h3 class="tit">${val.label}</h3>
+                    <h3 class="tit">${val.label_main}</h3>
                     <div class="btn">
                         <a href="${val.path}">more</a>
                     </div>

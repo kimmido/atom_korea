@@ -65,7 +65,7 @@ section{
 
 .cnt01 .grid li .tit {
     margin-top: min(0.4rem, 12px);
-    font-size: min(2.8em, 17px);
+    font-size: min(0.6rem, 17px);
     color: var(--color-point);
 }
 

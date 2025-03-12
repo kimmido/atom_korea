@@ -44,6 +44,12 @@ section{
 .cnt01 .grid>li {
     height: min(9rem, 300px);
 }
+.cnt01 .grid li .tit {
+    font-size: min(0.9rem, 17px);
+}
+.cnt01 .grid>li .btn a {
+    font-size: min(0.8rem, var(--font-size-xs));
+}
 
 
 /* 컨텐츠2 */

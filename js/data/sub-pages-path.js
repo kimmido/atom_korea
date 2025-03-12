@@ -62,48 +62,56 @@ const solutionPages = [
     {
         id: "foods",
         label: "Foods",
+        label_main: "Foods Industry",
         path: "/pages/solution/foods.html",
         icon: "foods_red.png"
     },
     {
         id: "personalCare",
         label: "Personal Care",
+        label_main: "Personal Care",
         path: "/pages/solution/foods.html",
         icon: "personal-care_red.png"
     },
     {
         id: "pharmaceuticals",
         label: "Pharmaceuticals",
+        label_main: "Pharmaceuticals",
         path: "/pages/solution/foods.html",
         icon: "pharmaceuticals_red.png"
     },
     {
         id: "dairy",
         label: "Dairy",
+        label_main: "Dairy Industry",
         path: "/pages/solution/fooDs.html",
         icon: "dairy_red.png"
     },
     {
         id: "automotive",
         label: "Automotive",
+        label_main: "Automotive",
         path: "/pages/solution/foods.html",
         icon: "automotive_red.png"
     },
     {
         id: "newEnergy",
         label: "New Energy",
+        label_main: "New Energy",
         path: "/pages/solution/foods.html",
         icon: "new-energy_red.png"
     },
     {
         id: "pcb",
         label: "PCB",
+        label_main: "PCB",
         path: "/pages/solution/foods.html",
         icon: "pcb_red.png"
     },
     {
         id: "3c",
         label: "3C",
+        label_main: "3C",
         path: "/pages/solution/foods.html",
         icon: "3c_red.png"
     },
