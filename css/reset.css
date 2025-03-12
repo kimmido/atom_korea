@@ -15,9 +15,26 @@ html문서의 스타일을 만들기 쉽게 하기 위해 스타일을 사용 �
 	--font-size-sm: 15px;
 	--font-size-md: 17px;
 
-	--font-responsive-24to17: min(0.73rem,24px);
-	--font-responsive-17to13: min(0.6rem,17px);
-
+	--font-responsive-15to12: min(0.53rem, 15px);
+    --font-responsive-17to13: min(0.58rem, 17px);
+    --font-responsive-20to15: min(0.67rem, 20px);
+    --font-responsive-24to17: min(0.75rem, 24px);
+    --font-responsive-32to24: min(1.06rem, 32px);
+	
+	@media (max-width: 1024px) {
+		--font-responsive-15to12: min(0.57rem, 15px);
+        --font-responsive-17to13: min(0.62rem, 17px);
+        --font-responsive-20to15: min(0.71rem, 20px);
+        --font-responsive-24to17: min(0.81rem, 24px);
+        --font-responsive-32to24: min(1.14rem, 32px);
+	}
+	@media (max-width: 420px) {
+		--font-responsive-15to12: min(0.64rem,15px);
+		--font-responsive-17to13: min(0.7rem,17px);
+		--font-responsive-20to15: min(0.8rem,20px);
+		--font-responsive-24to17: min(0.91rem,24px);
+		--font-responsive-32to24: min(1.28rem,32px);
+	}
 }
 
 @font-face {

@@ -10,7 +10,7 @@
 .hdrWrap header{
     display: flex;
     justify-content: space-between;
-    line-height: var(--header-height);
+    align-items: center;
 }
 header .logo{
     width: calc(100% / 16 * 2);

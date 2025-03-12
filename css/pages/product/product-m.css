@@ -2,51 +2,59 @@
 .cntWrap{
     margin-top: 40px;
 }
-.content>header{
-    font-size: 14px;
-    line-height: 40px;
+/* header */
+.content header .tab li {
+    line-height: 2;
+    font-size: var(--font-size-sm);
 }
-.content>header li::after{
+.content header .tab li::after{
     width: 60px !important;
     height: 2px !important;
 }
-.content>section{
+
+/* artTop */
+.content section{
     margin-top: 40px;
 }
-.content .artTop>article{
+.content .artTop article{
     width: calc(100% / 2);
     padding-bottom: 40px;
 }
 .content .artTop .image{
-    height: 120px;
+    /* height: 120px; */
     width: 80%;
 }
-.content .artTop .texts>h3{
+.content .artTop .texts h3{
     font-size: 12px;
     line-height: 20px;
+    font-size: var(--font-size-xs);
 }
+
+/* prodInfo */
 .artBtm>.prodInfo{
+    flex-direction: column;
     padding: 40px 0px;
 }
 .artBtm>.prodInfo>.image{
-    height: 200px;
+    width: 60%;
+    min-width: 0;
+    /* height: 200px; */
 }
 .artBtm>.prodInfo>.texts{
     padding: 0 0 0 5px;
+    min-width: 0;
 }
 .artBtm>.prodInfo>.texts>h3{
-    font-size: 12px;
+    font-size: var(--font-responsive-24to17);
     line-height: 40px;
 }
 .artBtm>.prodInfo>.texts>h5{
-    font-size: 11px;
+    font-size: var(--font-responsive-20to15);
     line-height: 15px;
     margin: 15px 0 5px;
 }
-.artBtm>.prodInfo>.texts>p{
-    line-height: 10px;
-    font-size: 10px;
-}
+
+/* specifications */
 .artBtm>.detailInfo>.texts{
     line-height: 30px;
     font-size: 12px;

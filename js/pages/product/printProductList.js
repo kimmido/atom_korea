@@ -40,8 +40,8 @@ function printArtBtm(dataArr) {
                                     `)).join("")
                                 } 
                                 ${
-                                    desc.bullets? desc.bullets.map(bullet => (`
-                                    <p class="bullet">${bullet}</p>
+                                    desc.bullets? desc.bullets.map((bullet, idx) => (`
+                                    <p class="bullet i${idx}">${bullet}</p>
                                     `)).join("") : ''
                                 }
                             </div>

@@ -1,51 +1,59 @@
 /* 컨텐츠 */
-.content{
+/* header */
+.content header .tab {
     width: 90%;
-    max-width: 700px;
 }
-/* .content>header{
-    font-size: min(1.8em,18px);
-} */
-.content>header li::after{
+.content header .tab li{
+    width: calc(100% / 2);
+    font-size: var(--font-responsive-24to17);
+}
+.content header li::after{
     width: calc(100%/ 4);
 }
-.content>header>ul{
-    width: 100%;
-}
-.content>header li{
-    width: calc(100% / 2);
-    margin: 0 auto;
-}
-.content>header>ul>li:nth-child(odd)::before{
+.content header ul li:nth-child(odd)::before{
     display: none;
 }
-.content>header>ul>li:nth-child(even)::before{
+.content header ul li:nth-child(even)::before{
     display: inline-block;
     content: '/';
     font-weight: normal;
     position: absolute;
     left: 0;
 }
-.content .artTop>article{
+
+/* artTop */
+.content .artTop article{
     width: calc(100% / 3);
 }
 .content .artTop .image{
-    height: min(4.5rem,180px);
+    /* height: min(4.5rem,180px); */
 }
-.content .artTop .texts>h3{
+.content .artTop .texts h3{
     font-size: min(1.6rem,16px);
 }
+
+/* prodInfo */
 .artBtm>.prodInfo{
-    padding: min(1rem,40px) 0;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    padding-left: 0;
+    padding-right: 0;
 }
 .artBtm>.prodInfo>.image{
-    height: min(8rem,320px);
+    min-width: 380px;
+    max-width: 482px;
+    margin: 0 auto;
+}
+.artBtm>.prodInfo>.image img {
+    /* width: auto; */
 }
 .artBtm>.prodInfo>.texts{
+    min-width: 400px;
     padding: 0;
 }
 .artBtm>.prodInfo>.texts>h3{
-    font-size: min(2.4em,24px);
+    font-size: var(--font-responsive-24to17);
     line-height: min(1rem,40px);
 }
 .artBtm>.prodInfo>.texts>h5{
@@ -53,11 +61,14 @@
     line-height: min(0.5rem,20px);
     margin: 20px 0 5px;
 }
-.artBtm>.prodInfo>.texts>p{
-    line-height: min(0.5rem,20px);
-    font-size: min(1.2em,12px);
-    width: 100%;
+.artBtm>.prodInfo>.texts .text,
+.artBtm>.prodInfo>.texts .bullet {
+    width: 98%;
+    line-height: 1.5;
 }
+
+
+/* specifications */
 .artBtm>.detailInfo>.texts{
     line-height: min(1rem,40px);
     font-size: min(1.6em,16px);

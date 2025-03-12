@@ -31,9 +31,12 @@ background-image: url('../../../image/heading/company.jpg');
 
 .mainTop>.texts{
     position: absolute;
-    left: min(0.6rem, 24px);
+    left: 50%;
     bottom: min(0.6rem, 24px);
-    /* width: 100%; */
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 10px;
+    transform: translateX(-50%);
 }
 
 .mainTop.text-center >.texts{
@@ -44,7 +47,7 @@ background-image: url('../../../image/heading/company.jpg');
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-    font-size: min(4.8em,48px);
+    font-size: min(1.6rem,48px);
     font-weight: 700;
     text-align: left;
     text-transform: uppercase;
@@ -127,7 +130,7 @@ background-image: url('../../../image/heading/company.jpg');
     }
 
     .mainTop h2{
-        font-size: min(3.6em,36px);
+        font-size: min(1.2rem,36px);
         line-height: min(1rem,40px);
     }
 
