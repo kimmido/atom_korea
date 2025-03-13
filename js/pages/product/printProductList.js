@@ -1,4 +1,4 @@
-function printArtTop(dataArr) {
+export function printProductArtTop(dataArr) {
     const artTop = document.querySelector(".artTop");
     let artTopHtml = "";
     
@@ -18,7 +18,7 @@ function printArtTop(dataArr) {
     artTop.innerHTML = artTopHtml;
 }
 
-function printArtBtm(dataArr) {
+export function printProductArtBtm(dataArr) {
     const artBtm = document.querySelector(".artBtm");
     let artBtmHtml = "";
     

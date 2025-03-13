@@ -29,7 +29,7 @@
     /* height: min(4.5rem,180px); */
 }
 .content .artTop .texts h3{
-    font-size: min(1.6rem,16px);
+    /* font-size: min(1.6rem,16px); */
 }
 
 /* prodInfo */
@@ -70,13 +70,11 @@
 
 /* specifications */
 .artBtm>.detailInfo>.texts{
-    line-height: min(1rem,40px);
-    font-size: min(1.6em,16px);
+    line-height: min(1.5rem,40px);
 }
 .artBtm>.detailInfo>.texts>.btn{
     width: calc(100% / 8 * 0.5);
 }
 .artBtm>.detailInfo>.imgBox>.image{
-    width: calc(100% / 8 * 7);
     margin: min(1rem,40px) auto; 
 }

@@ -25,9 +25,7 @@
     width: 80%;
 }
 .content .artTop .texts h3{
-    font-size: 12px;
     line-height: 20px;
-    font-size: var(--font-size-xs);
 }
 
 /* prodInfo */
@@ -48,7 +46,7 @@
     font-size: var(--font-responsive-24to17);
     line-height: 40px;
 }
-.artBtm>.prodInfo>.texts>h5{
+.artBtm>.prodInfo>.texts>h5{ 
     font-size: var(--font-responsive-20to15);
     line-height: 15px;
     margin: 15px 0 5px;
@@ -57,12 +55,11 @@
 /* specifications */
 .artBtm>.detailInfo>.texts{
     line-height: 30px;
-    font-size: 12px;
 }
 .artBtm>.detailInfo>.texts>.btn{
     width: 30px;
+    font-size: 12px;
 }
 .artBtm>.detailInfo>.imgBox>.image{
-    width: 90%;
     margin: 20px auto;
 }

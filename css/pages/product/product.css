@@ -86,7 +86,7 @@
     margin-top: 4px;
 }
 .content .artTop .texts h3{
-    font-size: min(1.8rem,18px);
+    font-size:var(--font-responsive-20to15);
     line-height: min(1rem,40px);
     font-weight: 600;
 }
@@ -136,7 +136,7 @@
 .artBtm>.prodInfo>.texts .bullet {
     width: 95%;
     line-height: 1.7;
-    font-size: var(--font-responsive-15to12);
+    font-size: var(--font-responsive-17to13);
 }
 .artBtm>.prodInfo>.texts .bullet {
     margin-top: 0.2rem;
@@ -166,10 +166,9 @@
 .artBtm>.detailInfo>.texts {
     display: flex;
     justify-content: space-between;
-    line-height: min(1.25rem, 50px);
+    line-height: min(1.8rem, 60px);
     background-color: #eee;
     text-align: center;
-    font-size: min(1.8em, 18px);
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
     cursor: pointer;
@@ -177,11 +176,12 @@
 .artBtm>.detailInfo>.texts>h3{
     width: 100%;
     font-size: var(--font-responsive-17to13);
-    line-height: min(1.25rem,50px);
+    /* line-height: min(1.25rem,50px); */
     text-transform: capitalize;
 }
 .artBtm>.detailInfo>.texts>.btn{
     width: calc(100% / 16 * 0.6);
+    font-size: min(0.6rem, 20px);
     border-left: 1px solid #ccc;
     cursor: pointer;
 }
@@ -195,26 +195,10 @@
     border-bottom: 1px solid #ccc;
 }
 .artBtm>.detailInfo>.imgBox>.image{
-    width: 94%;
+    width: 98%;
     margin: min(1.25rem,50px) auto;  
 }
 img{
     max-width: 100%;
     height: auto;
-}
-
-.test-1 {
- font-size: var(--font-responsive-15to12);
-}
-.test-2 {
- font-size: var(--font-responsive-17to13);
-}
-.test-3 {
-font-size: var(--font-responsive-20to15);
-}
-.test-4 {
- font-size: var(--font-responsive-24to17);
-}
-.test-5 {
- font-size: var(--font-responsive-32to24);
 }
