@@ -9,48 +9,6 @@
     padding: 0 10px;
 }
 
-/* header */
-.content header .tab {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    row-gap: min(0.53rem,15px);
-    width: calc(100% / 16 * 12);
-    margin: 0 auto;
-}
-.content header .tab li {
-    position: relative;
-    width: calc(100% / 3);
-    text-align: center;
-    font-size: var(--font-responsive-24to17);
-    line-height: min(1rem,40px);
-    text-transform: uppercase;
-}
-.content header .tab--link li{
-    cursor: pointer;
-}
-.content header li:nth-child(1)~::before{
-    display: inline-block;
-    content: '/';
-    font-weight: normal;
-    position: absolute;
-    left: 0;
-}
-.content header li:nth-child(3n + 1)::before{
-   display: none;
-}
-.content header li.on {
-    font-weight: 700;
-}
-.content header li.on:after{
-    display: block;
-    content: '';
-    width: calc(100% / 4);
-    height: 3px;
-    background-color: var(--color-point);
-    margin: 0 auto;
-}
-
 /* artTop */
 .content section{
     margin-top: min(1.3rem,50px);

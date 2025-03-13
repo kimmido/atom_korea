@@ -93,9 +93,6 @@ header>.logo{
     width: 90%;
     max-width: 700px;
 }
-.content>header::after{
-    width: calc(100%/ 8);
-}
 .content>section{
     margin-top: min(1rem,40px);
 }

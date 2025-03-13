@@ -2,15 +2,6 @@
 .cntWrap{
     margin-top: 40px;
 }
-/* header */
-.content header .tab li {
-    line-height: 2;
-    font-size: var(--font-size-sm);
-}
-.content header .tab li::after{
-    width: 60px !important;
-    height: 2px !important;
-}
 
 /* artTop */
 .content section{

@@ -1,26 +1,4 @@
 /* 컨텐츠 */
-/* header */
-.content header .tab {
-    width: 90%;
-}
-.content header .tab li{
-    width: calc(100% / 2);
-    font-size: var(--font-responsive-24to17);
-}
-.content header li::after{
-    width: calc(100%/ 4);
-}
-.content header ul li:nth-child(odd)::before{
-    display: none;
-}
-.content header ul li:nth-child(even)::before{
-    display: inline-block;
-    content: '/';
-    font-weight: normal;
-    position: absolute;
-    left: 0;
-}
-
 /* artTop */
 .content .artTop article{
     width: calc(100% / 3);

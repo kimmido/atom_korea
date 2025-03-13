@@ -7,21 +7,6 @@
     max-width: 1420px;
     margin: 0 auto;
 }
-.content>header{
-    font-size: min(2.4em,24px);
-    line-height: min(1rem,40px);
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-}
-.content>header::after{
-    display: block;
-    content: '';
-    width: calc(100% / 16);
-    height: 3px;
-    background-color: var(--color-point);
-    margin: 0 auto;
-}
 .content>section{
     margin-top: min(2rem,80px);
 }
