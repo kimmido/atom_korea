@@ -28,7 +28,7 @@ html문서의 스타일을 만들기 쉽게 하기 위해 스타일을 사용 �
         --font-responsive-24to17: min(0.81rem, 24px);
         --font-responsive-32to24: min(1.14rem, 32px);
 	}
-	@media (max-width: 420px) {
+	@media (max-width: 480px) {
 		--font-responsive-15to12: min(0.64rem,15px);
 		--font-responsive-17to13: min(0.7rem,17px);
 		--font-responsive-20to15: min(0.8rem,20px);

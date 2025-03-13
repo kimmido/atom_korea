@@ -3,7 +3,7 @@ import { imageSwap } from "../pages/main/imageSwap.js";
 const resizeHandlers = [imageSwap].filter(fn => typeof fn === "function");
 const resonsive = {
     wd_tab: 1024,
-    wd_m: 420
+    wd_m: 480
 }
 
 document.addEventListener("DOMContentLoaded", function() {

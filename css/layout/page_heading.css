@@ -158,7 +158,7 @@ background-image: url('../../../image/heading/company.jpg');
 }
 
 /* ======== mobile ======== */
-@media (max-width: 430px) {
+@media (max-width: 480px) {
     .mainWrap {
         margin-top: var(--header-height-M);
     }

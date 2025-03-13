@@ -250,7 +250,7 @@ header .logo{
 } 
 
 /* ======== 모바일 ======== */
-@media (max-width: 430px) {
+@media (max-width: 480px) {
     /* ======== 헤더 ======== */
     .hdrWrap>header{
         line-height: var(--header-height-M);
