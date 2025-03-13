@@ -9,11 +9,10 @@
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/xeicon.min.css">
     <link rel="stylesheet" href="../../css/layout/inc.css">
-    <link rel="stylesheet" href="../../css/pages/company/deltabot_company_greeting.css">
     <link rel="stylesheet" href="../../css/layout/page_heading.css">
+    <link rel="stylesheet" href="../../css/layout/page-heading-tab.css">
     <link rel="stylesheet" href="../../css/layout/content-header.css">
-    <link rel="stylesheet" href="../../css/pages/company/deltabot_company_greeting_tab.css" media="(max-width:1024px) and (min-width:0px)">
-    <link rel="stylesheet" href="../../css/pages/company/deltabot_company_greeting_M.css" media="(max-width:480px) and (min-width:0px)">
+    <link rel="stylesheet" href="../../css/pages/company/greeting.css">
     <script src="../../js/jquery-3.6.0.min.js"></script>
     <script src="../../js/deltabot_common.js"></script>
 </head>
@@ -30,27 +29,31 @@
                 </div>
             </div>
             <div class="mainBtm">
-                <ul class="nav">
-                    <li><a href="./greeting.html">greeting</a></li>
-                    <li><a href="./location.html">location</a></li>
-                </ul>
+                <div class="container">
+                    <ul class="nav">
+                        <li class="on"><a href="./greeting.html">greeting</a></li>
+                        <li><a href="./location.html">location</a></li>
+                    </ul>
+                </div>
             </div>
         </main>
     </div>
     <!-- 컨텐츠1 -->
     <div class="cntWrap">
         <div class="content cnt01">
-            <header>
-                <h2>greeting</h2>
+            <header class="cnt__header">
+                <h2 class="cnt__header__title">greeting</h2>
             </header>
             <section>
                 <article>
-                    <div class="image"></div>
-                    <div class="texts">
-                        <h3>“아톰 로봇 코리아 홈페이지를 찾아주신 고객 여러분께 감사드립니다.”</h3>
-                        <p>아톱로봇코리아는 델타 로봇, 고속 SCARA 로봇, 자율 컨트롤러, 시각 시스템과 같은 지능형 제조 기술의 연구 개발 및 혁신에 집중해 왔습니다. 업계를 선도하는 고속 로봇 전문가로 발전했습니다.  탁월한 기술력과 풍부한 현장경험으로 고객요구에 맞춰 정확하게 대응할 수있는 토탈 로봇 솔류션을 제공하고 있습니다.
-                        <p>식품, 제약, 자동화라인 같은 세분화된 산업의 고객에게 고속 로봇 제품과 자동화된 지능형 솔루션을 제공하는 데 전념해 왔으며, 고객이 비용을 절감하고 효율성을 높이는 데 도움을 주는 로봇산업의 선두 주자로 발돋움해 나갈것입니다. 시대의 빠른 변화에 능동적으로 대처해 나가겠습니다.</p>
-                        <p>아톰로봇코리아는  앞으로도 우수한 제품과 서비스를 바탕으로 고객 만족을 위해 최선을 다하는 기업이 되도록 노력하겠습니다.</p>
+                    <div class="container">
+                        <div class="image"></div>
+                        <div class="texts">
+                            <h3>“아톰 로봇 코리아 홈페이지를 찾아주신 고객 여러분께 감사드립니다.”</h3>
+                            <p>아톱로봇코리아는 델타 로봇, 고속 SCARA 로봇, 자율 컨트롤러, 시각 시스템과 같은 지능형 제조 기술의 연구 개발 및 혁신에 집중해 왔습니다. 업계를 선도하는 고속 로봇 전문가로 발전했습니다.  탁월한 기술력과 풍부한 현장경험으로 고객요구에 맞춰 정확하게 대응할 수있는 토탈 로봇 솔류션을 제공하고 있습니다.
+                            <p>식품, 제약, 자동화라인 같은 세분화된 산업의 고객에게 고속 로봇 제품과 자동화된 지능형 솔루션을 제공하는 데 전념해 왔으며, 고객이 비용을 절감하고 효율성을 높이는 데 도움을 주는 로봇산업의 선두 주자로 발돋움해 나갈것입니다. 시대의 빠른 변화에 능동적으로 대처해 나가겠습니다.</p>
+                            <p>아톰로봇코리아는  앞으로도 우수한 제품과 서비스를 바탕으로 고객 만족을 위해 최선을 다하는 기업이 되도록 노력하겠습니다.</p>
+                        </div>
                     </div>
                 </article>
             </section>
@@ -59,9 +62,9 @@
     <!-- 컨텐츠2 -->
     <div class="cntWrap">
         <div class="content cnt02">
-            <header>
-                <h2>Management Philosophy</h2>
-                <h5>경영이념</h5>
+            <header class="cnt__header">
+                <h2 class="cnt__header__title">Management Philosophy</h2>
+                <!-- <h5 class="cnt__header__title-sub">경영이념</h5> -->
             </header>
             <section>
                 <article>
