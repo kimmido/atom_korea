@@ -55,6 +55,11 @@ const produtPages = {
             label: "D3PMB series",
             path: "./delta-robot-d3pmb.html"
         },
+        {
+            id: "deltaRobotD3PMZ",
+            label: "D3PMZ series",
+            path: "./delta-robot-d3pmz.html"
+        },
     ]
 };
 
