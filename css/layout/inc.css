@@ -200,7 +200,7 @@ header .logo{
     .mobileWrap .mnTop>.logo{
         width: 160px;
         height: min(1.75rem,70px);
-        background-image: url('/image/delta_logo1.png');
+        background-image: url('/image/logo_black.svg');
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
