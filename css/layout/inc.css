@@ -93,7 +93,6 @@ header .logo{
 .footer{
     padding: min(1rem,40px) 0;
     color: #333;
-    line-height: min(0.5rem,20px);
 }
 .footer .logo{
     width: calc(100% / 16 * 2);
@@ -106,23 +105,19 @@ header .logo{
 }
 
 .footer ul{
-    /* width: calc(100% / 16 * 8); */
     display: flex;
     justify-content: left;
     flex-wrap: wrap;
+    column-gap: 25px;
+    row-gap: 12px;
     min-width: 580px;
     margin-top: min(1rem, 24px);
 }
 .footer ul>li{
-    margin-left: 25px;
-    font-size: min(0.54rem, var(--font-size-sm));
-}
-.footer ul>li:nth-child(1){
-    margin-left: 0px;
+    font-size: var(--font-responsive-15to12);
 }
 .footer h4{
-    font-size: min(0.45rem, var(--font-size-xs));
-    /* line-height: min(1rem,40px); */
+    font-size: var(--font-responsive-15to12);
     margin-top: min(1rem, 30px);
 }
 .fixed{
@@ -153,8 +148,10 @@ header .logo{
     text-transform: uppercase;
 }
 
+
+/* ======== 태블릿 ======== */
 @media (max-width: 1024px) {
-    /* 헤더 */
+    /* ======== 헤더 ======== */
     .hdrWrap>header{
         width: 90%;
         max-width: 700px;
@@ -239,9 +236,8 @@ header .logo{
         height: 240px;
     }
 
-    /* 풋터 */
+    /* ======== 풋터 ======== */
     .footer{
-        width: 90%;
         max-width: 700px;
     }
     .footer .logo{
@@ -251,20 +247,11 @@ header .logo{
         width: calc(100% / 8 * 7);
         min-width: auto;
     }
-    .footer ul>li{
-        margin-left: 15px;
-    }
-    .footer ul>li:nth-child(3){
-        margin-left: 0px;
-    }
-    .footer ul>li:nth-child(4){
-        margin-left: 15px;
-    }
 } 
 
+/* ======== 모바일 ======== */
 @media (max-width: 430px) {
-
-    /* 헤더 */
+    /* ======== 헤더 ======== */
     .hdrWrap>header{
         line-height: var(--header-height-M);
     }
@@ -304,14 +291,12 @@ header .logo{
         height: 180px;
     }
 
-    /* 풋터 */
+    /* ======== 풋터 ======== */
     .ftrWrap{
         margin-top: 40px;
     }
     .footer{
         padding: 40px 0px;
-        font-size: 12px;
-        line-height: 20px;
     }
     .footer .logo{
         width: calc(100% / 4 * 1.8);
@@ -320,15 +305,6 @@ header .logo{
     .footer ul{
         width: 100%;
         min-width: auto;
-    }
-    .footer ul>li{
-        margin-left: 0px;
-    }
-    .footer span{
-        display: none;
-    }
-    .footer ul>li:nth-child(6){
-        margin-left: 15px;
     }
     .footer>h4{
         line-height: 40px;
