@@ -10,9 +10,6 @@
 }
 
 /* header */
-.content header{
-    /* text-align: center; */
-}
 .content header .tab {
     display: flex;
     justify-content: center;
@@ -78,7 +75,6 @@
     cursor: pointer;
 }
 .content .artTop .image{
-    /* height: min(6rem,240px); */
     width: 60%;
     margin: 0 auto;
 }
@@ -104,19 +100,13 @@
 
 }
 .artBtm>.prodInfo>.image {
-    /* width: 46%; */
     align-content: center;
     text-align: center;
     object-fit: contain;
 }
-.artBtm>.prodInfo>.image img {
-    /* width: 98%; */
-}
 
 .artBtm>.prodInfo>.texts{
-    /* width: 54%; */
     align-content: center;
-    /* padding: min(1rem,40px); */
 }
 .artBtm>.prodInfo>.texts div{
     margin-top: min(0.66rem,20px);
@@ -176,7 +166,6 @@
 .artBtm>.detailInfo>.texts>h3{
     width: 100%;
     font-size: var(--font-responsive-17to13);
-    /* line-height: min(1.25rem,50px); */
     text-transform: capitalize;
 }
 .artBtm>.detailInfo>.texts>.btn{

@@ -21,7 +21,6 @@
     padding-bottom: 40px;
 }
 .content .artTop .image{
-    /* height: 120px; */
     width: 80%;
 }
 .content .artTop .texts h3{
@@ -36,7 +35,6 @@
 .artBtm>.prodInfo>.image{
     width: 60%;
     min-width: 0;
-    /* height: 200px; */
 }
 .artBtm>.prodInfo>.texts{
     padding: 0 0 0 5px;
