@@ -60,6 +60,16 @@ const produtPages = {
             label: "D3PMZ series",
             path: "./delta-robot-d3pmz.html"
         },
+        {
+            id: "deltaRobotD5",
+            label: "D5 series",
+            path: "./delta-robot-d5.html"
+        },
+        {
+            id: "deltaRobotS6",
+            label: "S6 series",
+            path: "./delta-robot-s6.html"
+        },
     ]
 };
 
