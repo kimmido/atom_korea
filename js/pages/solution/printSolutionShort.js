@@ -50,5 +50,7 @@ export function printSolutionShort(dataArr) {
         `;
     })
     
+    console.log(shortHtml);
+    console.log(artBtm);
     artBtm.innerHTML = shortHtml;
 }

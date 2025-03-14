@@ -1,13 +1,13 @@
-export function pageHeading(ID) {
+export function pageHeading(fileName) {
     const imgEl = document.querySelector('.mainWrap .image');
-    let fileName = '';
+    // let fileName = key;
 
-    if(ID.includes('deltaRobot')) fileName='delta-robot';
-    if(ID.includes('scara')) fileName='scara';
-    if(ID.includes('cobot')) fileName='cobot';
-    if(ID.includes('control')) fileName='control-system';
-    if(ID.includes('casePacker')) fileName='case-packer';
-    if(ID.includes('vision')) fileName='vision-system';
+    // for (const key in produtPages) {
+    //     if (ID.includes(key)) {
+    //         fileName = key;
+    //         break;
+    //     }
+    // }
 
     imgEl.style.backgroundImage = `url('../../../image/heading/${fileName}.jpg')`;
 }

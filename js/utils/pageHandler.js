@@ -1,3 +1,4 @@
+import { produtPages, solutionPages } from "../data/sub-pages-path.js";
 import { solutionData } from "/js/data/solutionData.js";
 import { printSolutionShort } from "/js/pages/solution/printSolutionShort.js";
 import { printTabMenu } from "../layout/printTabMenu.js";
@@ -13,14 +14,15 @@ window.addEventListener("DOMContentLoaded",
             for(const key in produtPages) {
                 if(ID.includes(key)) {
                     printTabMenu(produtPages[key], ID);
+                    pageHeading(key);
                 }
             }
-            pageHeading(ID);
             printProductArtTop(product[ID]);
             printProductArtBtm(product[ID]);
         }
     
         if(paths.includes("solution")) {
+            pageHeading(ID);
             printTabMenu(solutionPages, ID);
             printSolutionShort(solutionData[ID]);
         }  

@@ -1,4 +1,5 @@
 import { iconAlt } from "../../data/icon-alt.js";
+import { solutionPages } from "../../data/sub-pages-path.js";
 
 $(function(){
     var artGroup = $('main .artGroup');
@@ -123,7 +124,7 @@ $(function(){
                 <div class="item__inner">
                 
                     <img class="icon" src="/image/icon/${val.icon}" alt="${iconAlt[val.id]}">
-                    <h3 class="tit">${val.label_main}</h3>
+                    <h3 class="tit">${val.label_main? val.label_main : val.label}</h3>
                     <div class="btn">
                         <a href="${val.path}">more</a>
                     </div>

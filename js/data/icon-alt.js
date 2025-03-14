@@ -17,4 +17,9 @@ export const iconAlt = {
     packing: "포장 아이콘",
     packaging: "2차 포장 아이콘",
     conveyor_belt: "컨베이어 벨트 아이콘",
+    box_sealed: "박스 아이콘",
+    robot_palletizing: "팔레타이징 로봇 아이콘",
+    compasses: "컴퍼스 아이콘",
+    protractor: "각도기 아이콘",
+    manual_work: "수동작업 아이콘",
 }
