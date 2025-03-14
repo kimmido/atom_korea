@@ -74,7 +74,7 @@ main article .texts>p.active{
     margin-top: min(0.5rem,20px);
     opacity: 100%;
 }
-.mainWrap>ul{
+.mainWrap .pagination{
     display: flex;
     justify-content: space-between;
     width: calc(100% / 16 * 1.2);
@@ -85,7 +85,7 @@ main article .texts>p.active{
     bottom: 36px;
     min-width: 120px;
 }
-.mainWrap>ul>li{
+.mainWrap .pagination li{
     width: 15px;
     height: 15px;
     border-radius: 10px;
@@ -93,7 +93,7 @@ main article .texts>p.active{
     cursor: pointer;
     transition: all 0.3s;
 }
-.mainWrap>ul>li.show{
+.mainWrap .pagination li.show{
     background-color: var(--color-point);
     width: 30px;
 }

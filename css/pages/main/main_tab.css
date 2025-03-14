@@ -1,6 +1,18 @@
 /* 메인 슬라이드 */
-main article>.image{
-    height: min(21rem,840px);
+main article .image{
+    height: min(12rem, 610px);
+}
+main article .image.i1{
+    background-image: url('../../../image/main/banner1_tab.jpg');
+}
+main article .image.i2{
+    background-image: url('../../../image/main/banner2_tab.jpg');
+}
+main article .image.i3{
+    background-image: url('../../../image/main/banner3_tab.jpg');
+}
+main article .image.i4{
+    background-image: url('../../../image/main/banner4_tab.jpg');
 }
 main article>.texts{
     left: max(calc((100vw - 700px) / 2),calc((100vw - 90%) / 2));
@@ -12,13 +24,11 @@ main article>.texts>p{
     width: 100%;
     font-size: min(1.8em,18px);
 }
-.mainWrap>ul{
+.mainWrap .pagination{
     width: calc(100% / 8 * 1.2);
     bottom: min(1rem,40px);
 }
-.mainWrap>.scroll{
-    display: none;
-}
+
 
 /* 컨텐츠 */
 .content>header>h2{
