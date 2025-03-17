@@ -259,7 +259,8 @@
         overflow: hidden;
     }
     .content header .tab {
-        /* width: 200%; */
+        width: 300%;
+        justify-content: start;
         margin: 0 auto;
         overflow: hidden;
         gap: 8px;
@@ -285,6 +286,7 @@
         width: min(1rem, 36px);
         height: min(1rem, 36px);
         background-color: transparent;
+        cursor: pointer;
     }
 
     .arrow--prev::before,
@@ -332,7 +334,7 @@
 
 @media (max-width: 480px) {
     .content header .tab li {
-        flex: 0 0 min(5rem, 90px);
+        flex: 0 0 90px;
     }
     .content header .tab li a {
         height: min(5rem, 110px);

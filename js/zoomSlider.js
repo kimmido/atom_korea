@@ -52,11 +52,9 @@ zoomSlider.right2 = function(){
 }
 
 const LIST = $('.slideWrap .slideList');
-var wd = $(window).width();
 zoomSlider.node = LIST;
 
 zoomSlider.setOrder();
-// zoomSlider.setPos(wd);
 
 $('.slideWrap .left').click(function(){   
     zoomSlider.left2();
