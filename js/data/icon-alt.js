@@ -22,4 +22,11 @@ export const iconAlt = {
     compasses: "컴퍼스 아이콘",
     protractor: "각도기 아이콘",
     manual_work: "수동작업 아이콘",
+    lane: "두꺼운 라인 아이콘",
+    scale: "저울 아이콘",
+    rising: "상승 아이콘",
+    brush: "브러쉬 아이콘",
+    inspection: "검수 아이콘",
+    barcode: "바코드 아이콘",
+    box_pickup: "박스 집기 아이콘",
 }
