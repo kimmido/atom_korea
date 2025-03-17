@@ -24,7 +24,7 @@ html문서의 스타일을 만들기 쉽게 하기 위해 스타일을 사용 �
 	@media (max-width: 1024px) {
 		--font-responsive-15to12: min(0.57rem, 15px);
         --font-responsive-17to13: min(0.54rem, 17px);
-        --font-responsive-20to15: min(0.71rem, 20px);
+        --font-responsive-20to15: min(0.63rem, 20px);
         --font-responsive-24to17: min(0.71rem, 24px);
         --font-responsive-32to24: min(1.14rem, 32px);
 	}
@@ -56,7 +56,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, hr,
 figure, figcaption, footer, header, hgroup, main,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, *::before, *::after {
 	margin: 0;
 	padding: 0;
 	border: 0;

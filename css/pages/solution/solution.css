@@ -8,11 +8,12 @@
     margin: 0 auto;
     padding: 0 10px;
 } */
+
+/* 탭메뉴 */
 .content header{
     text-align: center;
 }
-
-.content header ul{
+.content header .tab{
     display: flex;
     justify-content: space-between;
     gap: min(0.2rem, 8px);
@@ -53,7 +54,7 @@
     display: flex;
     gap: 0.2rem;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     height: min(5rem, 168px);
 
@@ -63,11 +64,15 @@
 }
 
 .content header li a img {
+    margin-top: min(1.1rem, 40px);;
     width: 30%;
 }
 
 .content header li a span {
     font-size: var(--font-responsive-17to13);
+}
+.arrow {
+    display: none;
 }
 
 /* artBtm */
@@ -85,7 +90,8 @@
 
 .short_l,
 .short_r {
-    width: 50%;
+    /* width: 50%; */
+    flex: 1 1 50%;
     align-content: center;
 }
 
@@ -94,7 +100,7 @@
     width: 100%;
 }
 
-.short_r .texts h3 {
+ .texts h3 {
     position: relative;
     margin-bottom: 13px;
     padding: 12px 18px;
@@ -239,4 +245,107 @@
     height: 1px;
     background-color: #cd1121;
     margin-left: -10px;
+}
+
+@media (max-width: 1024px) {
+    /* 탭메뉴 */
+    .content header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .content header .slide-box {
+        flex: 1;
+        overflow: hidden;
+    }
+    .content header .tab {
+        /* width: 200%; */
+        margin: 0 auto;
+        overflow: hidden;
+        gap: 8px;
+    }
+    .content header .tab li {
+        flex: 0 0 140px;
+        border: 1px solid var(--color-point);
+    }
+    .content header .tab li a {
+        height: min(4.7rem, 140px);
+    }
+        
+    .content header .tab li a img {
+        margin-top: min(0.96rem, 30px);
+    }
+
+    .content header .tab li a span {
+        word-break: break-all;
+    }
+    .arrow {
+        position: relative;
+        display: block;
+        width: min(1rem, 36px);
+        height: min(1rem, 36px);
+        background-color: transparent;
+    }
+
+    .arrow--prev::before,
+    .arrow--next::before {
+        position: absolute;
+        left: 4px;
+        top: 4px;
+        content: '';
+        width: calc(100% - 8px);
+        height: calc(100% - 8px);
+        border-top: 3px solid var(--color-point);
+        border-right: 3px solid var(--color-point); 
+
+    }
+
+    .arrow--prev::before {
+        margin-left: 6px;
+        transform: rotate(225deg);
+    }
+
+    .arrow--next::before {
+        margin-right: 6px;
+        transform: rotate(45deg);
+    }
+
+    /* 솔루션 리스트 */
+    .artBtm .short {
+        flex-wrap: wrap;
+        gap: min(2rem,60px);
+    }
+
+    .short_l,
+    .short_r {
+        /* width: auto; */
+        flex: 1 1 calc(50% - 2rem);
+        min-width: 411px;
+    }
+
+    .info-list1 .icon {
+        width: auto;
+        height: auto;
+        max-width: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .content header .tab li {
+        flex: 0 0 min(5rem, 90px);
+    }
+    .content header .tab li a {
+        height: min(5rem, 110px);
+        padding: 6px;
+    }
+    .content header .tab li a img {
+       width: 39%;
+       margin-top: min(0.56rem, 12px);
+    }
+
+    .short_l,
+    .short_r {
+        flex: 100%;
+        min-width: 0;
+    }
 }

@@ -55,8 +55,8 @@ const product = {
             ]
         },
         {
-            name: "D2-1000-P15",
-            code: "D2-1000-P15",
+            name: "D2-1300-P15",
+            code: "D2-1300-P15",
             specImgCount: 1,
             desc: [
                 {
