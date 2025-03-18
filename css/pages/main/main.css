@@ -330,7 +330,6 @@ section{
 .cnt03 .video{
     width: calc(100% / 16 * 10);
     height: min(14rem,560px);
-    /* box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.3); */
 }
 .cnt03 .video video{
     width: 100%;

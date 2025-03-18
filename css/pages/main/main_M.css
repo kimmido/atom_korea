@@ -39,7 +39,6 @@ section{
 }
 .cnt01 .grid {
     grid-template-columns: repeat(2, 1fr);
-    /* width: calc(960 / 1420 * 100%); */
 }
 .cnt01 .grid>li {
     height: min(9rem, 300px);
