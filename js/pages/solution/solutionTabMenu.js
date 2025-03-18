@@ -11,7 +11,7 @@ export const tabHover = {
         if (li.matches('.on')) return;
         if (anchor.contains(e.relatedTarget)) return;
 
-        const img = e.target.querySelector('img');
+        const img = anchor.querySelector('img');
         const src = img.getAttribute('src');
         
         if(action == 'over') {
@@ -25,22 +25,25 @@ export const tabHover = {
 
  export const tabSlider = {
     index: 1,
-    node: document.querySelector('.slide-box ul.tab'),
+    slideBox: document.querySelector('.slide-box ul.tab'),
     prev: document.querySelector('.cnt01 header .arrow--prev'),
     next: document.querySelector('.cnt01 header .arrow--next'),
+
     setPos(vw, {wd_m}) {
         if(vw > wd_m){
             this.mv = 148;
         }else{
             this.mv = 98;
         }
-        this.currentPos =  -(this.mv * (this.index - 1)) + 'px';
-        this.node.style.marginLeft = this.currentPos;
+        
+        if (this.slideBox) {
+            this.slideBox.style.marginLeft = -(this.mv * (this.index - 1)) + 'px';
+        }
     },
     left(){
         if(this.index == 1) return;
         
-        this.node.animate([
+        this.slideBox.animate([
             {marginLeft: -(this.mv * (this.index - 1)) + 'px'},
             {marginLeft: -(this.mv * (this.index - 2)) + 'px'}
         ], {
@@ -53,7 +56,7 @@ export const tabHover = {
     right(){
         if(this.index == 8) return;
         
-        this.node.animate([
+        this.slideBox.animate([
             {marginLeft: -(this.mv * (this.index - 1)) + 'px'},
             {marginLeft: -(this.mv * this.index) + 'px'}
         ], {

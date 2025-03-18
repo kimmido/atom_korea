@@ -351,4 +351,23 @@
         flex: 100%;
         min-width: 0;
     }
+
+    .info-list1 {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .info-list1 li {
+        flex: 1 1 48%;
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+    .info-list1 li .icon {
+        margin: 0;
+    }
+    .info-list1 li h5 {
+        padding: 0 0.6rem;
+        text-align: left;
+    }
 }

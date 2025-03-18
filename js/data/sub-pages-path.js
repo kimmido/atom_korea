@@ -96,7 +96,7 @@ export const solutionPages = [
         id: "pharmaceuticals",
         label: "Pharmaceuticals",
         path: "/pages/solution/Pharmaceuticals.html",
-        icon: ["pharmaceuticals_red.png", "pharmaceuticals_red_white.png"]
+        icon: ["pharmaceuticals_red.png", "pharmaceuticals_white.png"]
     },
     {
         id: "dairy",
