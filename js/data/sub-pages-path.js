@@ -84,49 +84,49 @@ export const solutionPages = [
         label: "Foods",
         label_main: "Foods Industry",
         path: "/pages/solution/foods.html",
-        icon: "foods_red.png"
+        icon: ["foods_red.png", "foods_white.png"]
     },
     {
         id: "personalCare",
         label: "Personal Care",
         path: "/pages/solution/personal-care.html",
-        icon: "personal-care_red.png"
+        icon: ["personal-care_red.png", "personal-care_white.png"]
     },
     {
         id: "pharmaceuticals",
         label: "Pharmaceuticals",
         path: "/pages/solution/Pharmaceuticals.html",
-        icon: "pharmaceuticals_red.png"
+        icon: ["pharmaceuticals_red.png", "pharmaceuticals_red_white.png"]
     },
     {
         id: "dairy",
         label: "Dairy",
         label_main: "Dairy Industry",
         path: "/pages/solution/dairy.html",
-        icon: "dairy_red.png"
+        icon: ["dairy_red.png", "dairy_white.png"]
     },
     {
         id: "automotive",
         label: "Automotive",
         path: "/pages/solution/automotive.html",
-        icon: "automotive_red.png"
+        icon: ["automotive_red.png", "automotive_white.png"]
     },
     {
         id: "newEnergy",
         label: "New Energy",
         path: "/pages/solution/new-energy.html",
-        icon: "new-energy_red.png"
+        icon: ["new-energy_red.png", "new-energy_white.png"]
     },
     {
         id: "pcb",
         label: "PCB",
         path: "/pages/solution/pcb.html",
-        icon: "pcb_red.png"
+        icon: ["pcb_red.png", "pcb_white.png"]
     },
     {
         id: "3c",
         label: "3C",
         path: "/pages/solution/3c.html",
-        icon: "3c_red.png"
+        icon: ["3c_red.png", "3c_white.png"]
     },
 ];

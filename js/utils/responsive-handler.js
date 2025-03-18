@@ -1,4 +1,5 @@
 import { imageSwap } from "../pages/main/imageSwap.js";
+import { tabSlider } from "../pages/solution/solutionTabMenu.js";
 
 const resizeHandlers = [imageSwap].filter(fn => typeof fn === "function");
 const resonsive = {
@@ -9,7 +10,9 @@ const resonsive = {
 document.addEventListener("DOMContentLoaded", function() {
     let vw = window.innerWidth;
     zoomSlider?.setPos?.(vw, resonsive);
+    tabSlider?.setPos?.(w, resonsive)
     resizeHandlers.forEach(fn => fn(vw, resonsive));
+    
 });
 
 window.addEventListener("resize", debounce(() => {
