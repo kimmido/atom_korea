@@ -2,12 +2,6 @@
 .cntWrap{
     margin-top: min(2rem,80px);
 }
-/* .content{
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 10px;
-} */
 
 /* 탭메뉴 */
 .content header{
@@ -84,13 +78,11 @@
     display: flex;
     justify-content: space-between;
     gap: min(2rem,80px);
-    /* padding-top: min(2rem,80px); */
     padding: min(2rem,80px) 0 1.2rem;
 }
 
 .short_l,
 .short_r {
-    /* width: 50%; */
     flex: 1 1 50%;
     align-content: center;
 }
@@ -123,7 +115,6 @@
 
 .short_r .texts p {
     margin-bottom: min(1.2rem, 40px);
-    /* width: calc(100% / 8 * 7); */
     padding: 0 6px;
     color: #666;
     font-size: var(--font-responsive-17to13);
@@ -147,7 +138,6 @@
     flex: 1;
     padding: 0 5px;
     margin-bottom: 15px;
-    /* min-width: 16.66%; */
     word-break: keep-all;
 }
 
@@ -156,13 +146,10 @@
     display: inline-block;
     width: 1.5rem;
     height: 1.5rem;
-    /* border: 1px solid #cd1121; */
-    /* border-radius: 6px; */
     overflow: hidden;
 }
 
 .info-list1 h5{
-    /* font-size: min(0.8rem, 14px); */
     color: #333;
     font-weight: 400;
 }
@@ -224,13 +211,11 @@
 }
 
 .solution-list-new1 .solution-top p {
-    /* font-size: min(0.6rem, 14px); */
     color: #e1e2e3;
     font-weight: 700;
 }
 
 .short_r .solution-list-new1 .solution-title {
-    /* font-size: min(0.6rem, 14px); */
     color: #000000;
     margin-top: 10px;
     padding-bottom: 5px;

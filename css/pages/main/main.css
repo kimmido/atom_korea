@@ -242,10 +242,6 @@ section{
     transition: all 0.5s;
     padding-top: min(2rem,80px);
 }
-/* .cnt02 section>.artGroup>article:nth-child(3){
-    width: calc(100% / 28 * 5);
-    margin: 0 calc(100% / 28 * 1.7);
-} */
 .cnt02 section>.artGroup>article .image{
     width: 100%;
     height: min(10.5rem,340px);
@@ -253,7 +249,6 @@ section{
     background-size: 80%;
     border-radius: 50%;
     transition: all 0.5s;
-    /* clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%); */
 }
 .cnt02 .i1,.cnt02 .i2,.cnt02 .i5{
     background-size: 80%;
