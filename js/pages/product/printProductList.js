@@ -56,7 +56,8 @@ export function printProductArtBtm(dataArr) {
                     <div class="btn" data-num=${index}><i class="xi-angle-down-thin"></i></div>
                 </div>
                 <div class="imgBox">
-                    <div class="image">
+                    <span></span>
+                    <div class="inner" oncontextmenu="return false">
                     ${
                         (function() {
                             let img = "";

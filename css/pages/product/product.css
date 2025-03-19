@@ -138,10 +138,25 @@
     transition: max-height 0.5s;
 }
 .artBtm>.detailInfo>.imgBox.on{
+    position: relative;
     max-height: 200vw;
     border-bottom: 1px solid #ccc;
 }
-.artBtm>.detailInfo>.imgBox>.image{
+.artBtm>.detailInfo>.imgBox.on span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+    display: block;
+    content: '';
+    
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+}
+.artBtm>.detailInfo>.imgBox>.inner{
     width: 98%;
     margin: min(1.25rem,50px) auto;  
 }
