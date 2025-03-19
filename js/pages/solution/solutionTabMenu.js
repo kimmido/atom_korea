@@ -5,13 +5,12 @@ export const tabHover = {
         img.setAttribute('src', src.replace('red', 'white'));
     },
     overEvent(e, action) {
-        const anchor = e.target.closest('a');
         const li = e.target.closest('li');
-        if (!anchor) return;
+        if (!li) return;
         if (li.matches('.on')) return;
-        if (anchor.contains(e.relatedTarget)) return;
+        if (li.contains(e.relatedTarget)) return;
 
-        const img = anchor.querySelector('img');
+        const img = li.querySelector('img');
         const src = img.getAttribute('src');
         
         if(action == 'over') {
