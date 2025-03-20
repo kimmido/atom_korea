@@ -2533,9 +2533,6 @@ const product = {
                 },
                 {
                     title: "FEATURE",
-                    texts: [
-                        "비전 포함; 후속 피킹; 제품 분류 필요 없음; 피킹 알람 놓침; 힌지 지지대; 정밀한 위치 지정; 빠른 상자 교체",
-                    ],
                     bullets: [
                         "Max carton size(mm)：430*320*290",
                         "Max payload：2kg",
@@ -2557,9 +2554,6 @@ const product = {
                 },
                 {
                     title: "FEATURE",
-                    texts: [
-                        "비전과 결합; 후속 피킹; 제품 분류 필요 없음; 빠른 카톤 교체; 힌지 지지대; 정확한 위치 지정; 전환 가능한 후속 포장",
-                    ],
                     bullets: [
                         "Max carton size(mm)：430*430*305",
                         "Max payload：3kg",
@@ -2581,9 +2575,6 @@ const product = {
                 },
                 {
                     title: "FEATURE",
-                    texts: [
-                        "높은 통합성; 독립 제어 캐비닛 없음; 비전 포함; 후속 피킹; 제품 분류 필요 없음; 피킹 놓침 알람; 힌지 지지대; 정확한 위치 지정; 빠른 카톤 교체",
-                    ],
                     bullets: [
                         "Max carton size(mm)：500*400*400",
                         "Max payload：5kg",
@@ -2605,9 +2596,6 @@ const product = {
                 },
                 {
                     title: "FEATURE",
-                    texts: [
-                        "제품 분류; 비전 불필요; 빠른 상자 교체; 정확한 위치 지정; 힌지 지지; 미스 픽 감지; 제품 낙하 감지",
-                    ],
                     bullets: [
                         "Max carton size(mm)：368*224*115",
                         "Max payload：9kg",
@@ -2629,9 +2617,6 @@ const product = {
                 },
                 {
                     title: "FEATURE",
-                    texts: [
-                        "올인원 타입, 편리한 운반, 쉬운 배치, 다중 제품 패키징, 시각적 템플릿을 수동으로 전환할 필요가 없음, 빠른 카톤 교체, 힌지 지지대, 정밀한 위치 지정, 미스 픽 감지, 드롭 픽 감지",
-                    ],
                     bullets: [
                         "Max carton size(mm)：368*224*115",
                         "Max payload：3kg",
