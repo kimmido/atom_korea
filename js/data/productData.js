@@ -2247,7 +2247,7 @@ const product = {
         {
             name: "MD20SS",
             code: "MD20SS",
-            specImgCount: 2,
+            specImgCount: 1,
             desc: [
                 {
                     title: "INTRODUCTION",
