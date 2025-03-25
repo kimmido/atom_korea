@@ -35,12 +35,12 @@ export function printProductArtBtm(dataArr) {
                             <div>
                                 <h5>${desc.title}</h5>
                                 ${
-                                    desc.texts.map(text => (`
+                                    desc.texts? desc.texts.map(text => (`
                                     <p class="text">${text}</p>
-                                    `)).join("")
+                                    `)).join("") : ''
                                 } 
                                 ${
-                                    desc.bullets? desc.bullets.map((bullet, idx) => (`
+                                    desc.bullets? desc.bullets?.map((bullet, idx) => (`
                                     <p class="bullet i${idx}">${bullet}</p>
                                     `)).join("") : ''
                                 }
