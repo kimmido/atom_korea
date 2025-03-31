@@ -91,9 +91,16 @@ header .logo{
     background-color: #ddd;
 }
 .footer{
-    padding: min(1rem,40px) 0;
+    padding: min(1.2rem,40px) 0;
     color: #333;
 }
+
+.footer .flex-box {
+    display: flex;
+    gap: min(1.5rem,60px);
+    /* justify-content: center; */
+}
+
 .footer .logo{
     width: calc(100% / 16 * 2);
     height: min(2rem,80px);
@@ -110,8 +117,8 @@ header .logo{
     flex-wrap: wrap;
     column-gap: 25px;
     row-gap: 12px;
-    min-width: 580px;
-    margin-top: min(1rem, 24px);
+    /* min-width: 580px; */
+    max-width: min(21rem, 600px);
 }
 .footer ul>li{
     font-size: var(--font-responsive-15to12);
@@ -119,6 +126,7 @@ header .logo{
 .footer h4{
     font-size: var(--font-responsive-15to12);
     margin-top: min(1rem, 30px);
+    justify-content: center;
 }
 .fixed{
     position: fixed;
@@ -237,15 +245,15 @@ header .logo{
     }
 
     /* ======== 풋터 ======== */
-    .footer{
-        max-width: 700px;
-    }
     .footer .logo{
-        width: calc(100% / 8 * 2);
+        width: calc(100% / 5 * 1);
     }
     .footer ul{
-        width: calc(100% / 8 * 7);
+        width: calc(100% / 5 * 4);
         min-width: auto;
+    }
+    .footer h4{
+        text-align: center;
     }
 } 
 
@@ -298,6 +306,9 @@ header .logo{
     .footer{
         padding: 40px 0px;
     }
+    .footer .flex-box {
+        display: block;
+    }
     .footer .logo{
         width: calc(100% / 4 * 1.8);
         height: 80px;
@@ -305,9 +316,11 @@ header .logo{
     .footer ul{
         width: 100%;
         min-width: auto;
-    }
-    .footer>h4{
+    margin-top: min(1rem, 24px);
+}
+    .footer h4{
         line-height: 40px;
+        text-align: left;
     }
     .fixed{
         bottom: 15px;
