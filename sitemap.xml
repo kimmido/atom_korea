@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- 기본 페이지 -->
+  <url>
+    <loc>http://atomkorea.co.kr/index.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- 회사 소개 페이지 -->
+  <url>
+    <loc>http://atomkorea.co.kr/pages/company/greeting.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>http://atomkorea.co.kr/pages/company/location.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- case-packer -->
+  <url>
+    <loc>http://atomkorea.co.kr/pages/product/case-packer.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+    <!-- SCARA 로봇 페이지 -->
+  <url>
+    <loc>http://atomkorea.co.kr/pages/product/scara-m-bd.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://atomkorea.co.kr/pages/product/scara-m-gd.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://atomkorea.co.kr/pages/product/scara-st.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Control System 페이지 -->
+  <url>
+    <loc>http://atomkorea.co.kr/pages/product/control-system.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+
+  <!-- cobot -->
+  <url>
+    <loc>http://atomkorea.co.kr/pages/product/cobot-md20.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://atomkorea.co.kr/pages/product/cobot-md30.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://atomkorea.co.kr/pages/product/cobot-md40.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Delta Robot 제품 목록 -->
+  <url>
+    <loc>http://atomkorea.co.kr/pages/product/delta-robot-d2.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://atomkorea.co.kr/pages/product/delta-robot-d3p.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://atomkorea.co.kr/pages/product/delta-robot-d3pb.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://atomkorea.co.kr/pages/product/delta-robot-d3pm.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://atomkorea.co.kr/pages/product/delta-robot-d3pmb.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://atomkorea.co.kr/pages/product/delta-robot-d3pmz.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://atomkorea.co.kr/pages/product/delta-robot-d3pz.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Vision System -->
+  <url>
+    <loc>http://atomkorea.co.kr/pages/product/vision-system.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 솔루션 페이지 -->
+  <url>
+    <loc>http://atomkorea.co.kr/pages/solution/3c.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://atomkorea.co.kr/pages/solution/automotive.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://atomkorea.co.kr/pages/solution/dairy.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://atomkorea.co.kr/pages/solution/foods.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://atomkorea.co.kr/pages/solution/new-energy.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://atomkorea.co.kr/pages/solution/pcb.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://atomkorea.co.kr/pages/solution/personal-care.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://atomkorea.co.kr/pages/solution/pharmaceuticals.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
