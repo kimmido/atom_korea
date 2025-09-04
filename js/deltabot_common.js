@@ -1,5 +1,5 @@
 $(function(){
-    $('.hdr').load('/inc/deltabot_header.html',function(){
+    $('.hdr').load('/atom_korea/inc/deltabot_header.html',function(){
         var mnWrap = $('.pcWrap');
         var open = false;
         $('.hdrWrap .nav>li').mouseenter(function(){
@@ -65,7 +65,7 @@ $(function(){
             a.next().toggleClass('show');
         });
     })
-    $('.ftr').load('/inc/deltabot_footer.html',function(){
+    $('.ftr').load('/atom_korea/inc/deltabot_footer.html',function(){
         $('.top').click(function(){
             $('html,body').stop().animate({
                 scrollTop: 0
