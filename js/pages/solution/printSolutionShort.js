@@ -25,7 +25,7 @@ export function printSolutionShort(dataArr) {
                         data.infos.map((info) => (`
                             <li>
                                 <div class="icon">
-                                    <img src="/image/icon/${info.iconName}.png" alt="${iconAlt[info.iconName]}">
+                                    <img src="./image/icon/${info.iconName}.png" alt="${iconAlt[info.iconName]}">
                                 </div>
                                 <h5>${info.title}</h5>
                             </li>`
@@ -37,7 +37,7 @@ export function printSolutionShort(dataArr) {
                         data.solutions.map((solution, idx) => (`
                             <li>
                                 <div class="solution-top">
-                                    <img src="/image/icon/${solution.iconName}.png" alt="${iconAlt[solution.iconName]}">
+                                    <img src="./image/icon/${solution.iconName}.png" alt="${iconAlt[solution.iconName]}">
                                     <p>0${idx + 1}</p>
                                 </div>
                                 <p class="solution-title">${solution.title}</p>

@@ -119,11 +119,11 @@ $(function(){
 
     $.each(solutionPages, function(idx, val) {
         list.append(`
-            <li ${idx == 0? "class=on" : ""} data-pic="url('/image/main/solution_${val.id}.jpg')">
+            <li ${idx == 0? "class=on" : ""} data-pic="url('./image/main/solution_${val.id}.jpg')">
                 <span class="circle"></span>
                 <div class="item__inner">
                 
-                    <img class="icon" src="/image/icon/${val.icon[0]}" alt="${iconAlt[val.id]}">
+                    <img class="icon" src="./image/icon/${val.icon[0]}" alt="${iconAlt[val.id]}">
                     <h3 class="tit">${val.label_main? val.label_main : val.label}</h3>
                     <div class="btn">
                         <a href="${val.path}">more</a>

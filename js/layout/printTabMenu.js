@@ -13,7 +13,7 @@ export function printTabMenu(tabs, ID) {
             <li class="${tab.id == ID? "on": ""}" >
                 <a href=${tab.path}>
                     ${tab.icon? 
-                        `<img src="/image/icon/${tab.id == ID? tab.icon[1] : tab.icon[0]}">` : 
+                        `<img src="./image/icon/${tab.id == ID? tab.icon[1] : tab.icon[0]}">` : 
                         ""
                     }
                     <span>${tab.label}</span>
