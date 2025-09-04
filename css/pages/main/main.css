@@ -140,7 +140,7 @@ section{
 }
 .cnt01 .image {
     width: calc(460 / 1420 * 100%);
-    background-image: url('./image/main/solution_foods.jpg');
+    background-image: url('../../../image/main/solution_foods.jpg');
     transition: all 0.3s;
 }
 .cnt01 .grid {
