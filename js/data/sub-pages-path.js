@@ -83,50 +83,50 @@ export const solutionPages = [
         id: "foods",
         label: "Foods",
         label_main: "Foods Industry",
-        path: "./pages/solution/foods.html",
+        path: "./solution/foods.html",
         icon: ["foods_red.png", "foods_white.png"]
     },
     {
         id: "personalCare",
         label: "Personal Care",
-        path: "./pages/solution/personal-care.html",
+        path: "./solution/personal-care.html",
         icon: ["personal-care_red.png", "personal-care_white.png"]
     },
     {
         id: "pharmaceuticals",
         label: "Pharmaceuticals",
-        path: "./pages/solution/pharmaceuticals.html",
+        path: "./solution/pharmaceuticals.html",
         icon: ["pharmaceuticals_red.png", "pharmaceuticals_white.png"]
     },
     {
         id: "dairy",
         label: "Dairy",
         label_main: "Dairy Industry",
-        path: "./pages/solution/dairy.html",
+        path: "./solution/dairy.html",
         icon: ["dairy_red.png", "dairy_white.png"]
     },
     {
         id: "automotive",
         label: "Automotive",
-        path: "./pages/solution/automotive.html",
+        path: "./solution/automotive.html",
         icon: ["automotive_red.png", "automotive_white.png"]
     },
     {
         id: "newEnergy",
         label: "New Energy",
-        path: "./pages/solution/new-energy.html",
+        path: "./solution/new-energy.html",
         icon: ["new-energy_red.png", "new-energy_white.png"]
     },
     {
         id: "pcb",
         label: "PCB",
-        path: "./pages/solution/pcb.html",
+        path: "./solution/pcb.html",
         icon: ["pcb_red.png", "pcb_white.png"]
     },
     {
         id: "3c",
         label: "3C",
-        path: "./pages/solution/3c.html",
+        path: "./solution/3c.html",
         icon: ["3c_red.png", "3c_white.png"]
     },
 ];
