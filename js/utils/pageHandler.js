@@ -1,6 +1,6 @@
 import { produtPages, solutionPages } from "../data/sub-pages-path.js";
-import { solutionData } from "/js/data/solutionData.js";
-import { printSolutionShort } from "/js/pages/solution/printSolutionShort.js";
+import { solutionData } from "../data/solutionData.js";
+import { printSolutionShort } from "../pages/solution/printSolutionShort.js";
 import { printTabMenu } from "../layout/printTabMenu.js";
 import { pageHeading } from "../layout/page-heading.js";
 import { printProductArtTop, printProductArtBtm } from "../pages/product/printProductList.js";

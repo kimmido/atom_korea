@@ -21,12 +21,12 @@ main{
 }
 
 #foods .mainTop>.image{
-background-image: url('../../../image/heading/solution.jpg');
+background-image: url('../../image/heading/solution.jpg');
 }
 
 #location .mainTop>.image,
 #greeting .mainTop>.image{
-background-image: url('../../../image/heading/company.jpg');
+background-image: url('../../image/heading/company.jpg');
 }
 
 .mainTop>.texts{
