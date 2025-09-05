@@ -6,7 +6,7 @@ export function printProductArtTop(dataArr) {
         artTopHtml += `
             <article>
                 <div class="image i${index}">
-                    <img src="./image/product/${data.code}.png" alt="${data.name}">
+                    <img src="../../image/product/${data.code}.png" alt="${data.name}">
                 </div>
                 <div class="texts">
                     <h3>${data.name}</h3>
@@ -26,7 +26,7 @@ export function printProductArtBtm(dataArr) {
         artBtmHtml += `
             <article class="prodInfo">
                 <div class="image i${index + 1}">
-                    <img src="./image/product/${data.code}.png" alt="${data.name}">
+                    <img src="../../image/product/${data.code}.png" alt="${data.name}">
                 </div>
                 <div class="texts">
                     <h3>${data.name}</h3>
@@ -64,7 +64,7 @@ export function printProductArtBtm(dataArr) {
     
                             for (let i = 0; i < data.specImgCount; i++) {
                                 img += `
-                               <img src="./image/product/${data.code}_info${i + 1}.jpg" alt="${data.name}_info${i + 1}">    
+                               <img src="../../image/product/${data.code}_info${i + 1}.jpg" alt="${data.name}_info${i + 1}">    
                                 `;
                             }
     

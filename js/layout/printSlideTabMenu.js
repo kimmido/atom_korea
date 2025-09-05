@@ -13,7 +13,7 @@ export function printSlideTabMenu(tabs, ID) {
             <li class="slideItem ${tab.id == ID? "on": ""}" >
                 <a href=${tab.path}>
                     ${tab.icon? 
-                        `<img src="./image/icon/${tab.icon}">` : 
+                        `<img src="../../image/icon/${tab.icon}">` : 
                         ""
                     }
                     <span>${tab.label}</span>

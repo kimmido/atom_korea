@@ -9,5 +9,5 @@ export function pageHeading(fileName) {
     //     }
     // }
 
-    imgEl.style.backgroundImage = `url('../../../image/heading/${fileName}.jpg')`;
+    imgEl.style.backgroundImage = `url('../../image/heading/${fileName}.jpg')`;
 }
