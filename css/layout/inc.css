@@ -15,7 +15,7 @@
 header .logo{
     width: calc(100% / 16 * 2);
     height: var(--header-height);
-    background-image: url('/image/logo_black.svg');
+    background-image: url('../../image/logo_black.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center 44%;
@@ -104,7 +104,7 @@ header .logo{
 .footer .logo{
     width: calc(100% / 16 * 2);
     height: min(2rem,80px);
-    background-image: url('/image/logo_gray.svg');
+    background-image: url('../../image/logo_gray.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -140,7 +140,7 @@ header .logo{
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url('/image/youtube.png');
+    background-image: url('../../image/youtube.png');
 }
 .top{
     margin-top: 20px;
@@ -208,7 +208,7 @@ header .logo{
     .mobileWrap .mnTop>.logo{
         width: 160px;
         height: min(1.75rem,70px);
-        background-image: url('/image/logo_black.svg');
+        background-image: url('../../image/logo_black.svg');
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
